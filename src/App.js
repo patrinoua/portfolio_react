@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='App-header'>
+        <p>This is my new portfolio webpage</p>
+        <p>Step 1. Upload it to github</p>
+        <p>Step 2. Upload it to firebase</p>
+        <p>Step 3. Make a PWA out of it</p>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
