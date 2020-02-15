@@ -1,7 +1,8 @@
 import React, { lazy, Suspense } from 'react'
 import './App.css'
-import Project from './components/Project'
 import About from './components/About'
+import Project from './components/Project'
+import Contact from './components/Contact'
 import { H1 } from './components/Typography'
 
 const Header = lazy(() => import('./components/Header/index'))
@@ -27,7 +28,10 @@ function App() {
             snapshot={project.snapshot}
           />
         ))}
-
+        <Contact />
+        <div id='footer'>
+          <span>© 2020 Angeliki Patrinou </span>
+        </div>
         {/* <p>Things to implement</p>
       <p>Step 2. Upload it to firebase (done)</p>
       <p>Step 3. Make a PWA out of it (half done)</p>

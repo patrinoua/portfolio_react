@@ -74,7 +74,7 @@ export const MenuIconContainer = styled.div`
 `
 export const GithubContainer = styled(MenuIconContainer)`
   &:hover {
-    background: black;
+    background: #999;
   }
 `
 export const LinkedinContainer = styled(MenuIconContainer)`

@@ -14,3 +14,16 @@ a:hover {
   flex-direction: column;
   align-items: center;
 }
+
+#footer {
+  font-size: 0.9em;
+  margin-top: -1px;
+  z-index: 1;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #191919;
+}
