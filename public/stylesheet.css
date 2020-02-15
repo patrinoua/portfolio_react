@@ -9,6 +9,8 @@ a {
 a:hover {
   cursor: pointer;
 }
-appcontainer {
-  width: 100vw;
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
