@@ -9,3 +9,6 @@ a {
 a:hover {
   cursor: pointer;
 }
+appcontainer {
+  width: 100vw;
+}
