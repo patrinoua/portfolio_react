@@ -1,7 +1,7 @@
 #### Run a build and serve
 
-`npm run build
-firebase serve`
+`npm run build`
+`firebase serve`
 
 #### deploy in firebase
 `firebase deploy`
