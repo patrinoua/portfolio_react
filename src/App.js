@@ -6,9 +6,10 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <p>This is my new portfolio webpage</p>
-        <p>Step 1. Upload it to github</p>
-        <p>Step 2. Upload it to firebase</p>
-        <p>Step 3. Make a PWA out of it</p>
+        <p>Step 2. Upload it to firebase (done)</p>
+        <p>Step 3. Make a PWA out of it (half done)</p>
+        <p>Step 3. Make a PWA out of it (half done)</p>
+        <p>Step 4. Lazy loading</p>
       </header>
     </div>
   )

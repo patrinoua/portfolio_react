@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
-var firebase = require('firebase')
+var firebase = require('firebase/app')
 const firebaseConfig = require('./secrets.json').firebaseConfig
 
 firebase.initializeApp(firebaseConfig)
