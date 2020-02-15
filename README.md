@@ -1,3 +1,13 @@
+Run a build and serve
+
+npm run build
+
+firebase serve
+
+deploy in firebase: firebase deploy
+
+run locally: yarn start
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
