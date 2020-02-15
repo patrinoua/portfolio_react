@@ -17,7 +17,7 @@ function App() {
   ]
   return (
     <Suspense fallback={'Loading...'}>
-      <div class='appContainer'>
+      <div className='appContainer'>
         <Header />
         <About />
         <H1>Projects</H1>

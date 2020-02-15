@@ -1,4 +1,7 @@
-import React, { lazy, Suspense } from 'react'
+import React, {
+  // lazy,
+  Suspense
+} from 'react'
 import { Title, AboutMe, Photo, Description } from './elements'
 import { Regular } from '../Typography'
 
