@@ -1,4 +1,11 @@
 import styled from 'styled-components'
+export const ProjectContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
 
 export const ProjectImage = styled.a`
   height: 80vh;
@@ -25,11 +32,4 @@ export const ProjectText = styled.div`
     margin: 20px;
   }
   // box-shadow: 1px 1px 18px 13px white;
-`
-export const ProjectContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `

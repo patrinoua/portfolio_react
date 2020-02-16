@@ -12,6 +12,7 @@ export const Background = styled.div`
   text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.8);
   @media (max-width: 768px) {
     height: 100vh;
+    background-attachment: fixed;
   }
 `
 

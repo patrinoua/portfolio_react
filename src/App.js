@@ -9,11 +9,23 @@ const Header = lazy(() => import('./components/Header/index'))
 
 function App() {
   return (
-    <Suspense fallback={'Loading...'}>
+    <Suspense
+      fallback={'Loading...'}
+      style={{
+        width: ' 100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+    >
       <div className='appContainer'>
         <Header />
-
-        <Element name='about' className='element'>
+        <Element
+          name='about'
+          className='element'
+          style={{ position: 'relative' }}
+        >
           <About />
         </Element>
         <Element name='projects' className='element'>

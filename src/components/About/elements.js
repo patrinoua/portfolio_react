@@ -10,6 +10,7 @@ export const AboutMe = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
+  position: relative;
 `
 export const AboutMeBox = styled.div`
   width: 50%;
@@ -31,7 +32,7 @@ export const Photo = styled(AboutMeBox)`
   background-repeat: no-repeat;
   background-position: center;
   @media (max-width: 768px) {
-    margin-top: 50px;
+    // margin-top: 50px;
     background-size: cover;
     width: 100%;
     height: 500px;
