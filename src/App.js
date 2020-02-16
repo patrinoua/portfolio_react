@@ -38,12 +38,15 @@ function App() {
       <p>Step 3. Make a PWA out of it (half done)</p>
       <p>Step 4. Lazy loading (done)</p>
       <p>Step 5. Translation</p>
-      <p>Step 6. Responsiveness(done)</p>
-      <p>Step 7. connect Header navigation items to places in the screen</p>
+      <p>Step 6. Responsiveness(done) - To do: for big screens</p>
+      <p>Step 7. connect Header navigation items to places in the screen (done)</p>
       
-      I am doing this in order to have google
-      analytics enabled. Also implement routing between different pages. And
-      have different pages with services, showcase projects etc. */}
+      I am doing this in order to:
+      - have google analytics 
+      - implement routing between different pages. 
+      - have different pages with services, showcase projects etc. 
+      
+      */}
       </div>
     </Suspense>
   )
