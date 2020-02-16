@@ -60,6 +60,7 @@ export const MenuItem = styled(Link)`
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: rgba(255, 255, 255, 0.8);
   margin: 8px;
+  font-weight: 500;
   @media (max-width: 768px) {
     display: none;
   }
@@ -67,7 +68,7 @@ export const MenuItem = styled(Link)`
 export const MenuIconContainer = styled.div`
   width: 25px;
   height: 25px;
-  margin-right: 5px;
+  margin: 5px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -80,6 +81,7 @@ export const GithubContainer = styled(MenuIconContainer)`
   }
 `
 export const LinkedinContainer = styled(MenuIconContainer)`
+  margin-left: 0;
   &:hover {
     background: #2f76b0;
   }
