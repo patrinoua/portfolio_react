@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 
 export const Background = styled.div`
-  background: lightgrey;
-  height: 300px;
+  // height: 300px;
   width: 100%;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   color: white;
   background-image: url('assets/background.jpg');
   text-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
@@ -15,7 +13,7 @@ export const Background = styled.div`
 
 export const NavigationBar = styled.div`
   // background: black;
-  height: 80px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   margin: 0 60px;
@@ -33,6 +31,8 @@ export const NavItem = styled.div`
 `
 export const Name = styled.div`
   font-size: 2.2em;
+  display: flex;
+  align-items: center;
   @media (max-width: 768px) {
     font-size: 1.3em;
     font-weight: 600;
@@ -41,7 +41,7 @@ export const Name = styled.div`
 export const Subtitle = styled.h2`
   font-size: 4em;
   font-weight: 300;
-  height: 70%;
+  height: 40vh;
   width: 300px;
   display: flex;
   align-items: center;
