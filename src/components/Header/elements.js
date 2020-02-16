@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 export const Background = styled.div`
   // height: 300px;
@@ -13,7 +14,7 @@ export const Background = styled.div`
 
 export const NavigationBar = styled.div`
   // background: black;
-  height: 90px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   margin: 0 60px;
@@ -33,6 +34,7 @@ export const Name = styled.div`
   font-size: 2.2em;
   display: flex;
   align-items: center;
+  font-weight: 500;
   @media (max-width: 768px) {
     font-size: 1.3em;
     font-weight: 600;
@@ -54,7 +56,7 @@ export const Subtitle = styled.h2`
   }
 `
 
-export const MenuItem = styled.a`
+export const MenuItem = styled(Link)`
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: rgba(255, 255, 255, 0.8);
   margin: 8px;

@@ -3,7 +3,7 @@ import './App.css'
 import About from './components/About'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact'
-import { H1 } from './components/Typography'
+import { Element, animateScroll as scroll } from 'react-scroll'
 
 const Header = lazy(() => import('./components/Header/index'))
 
@@ -19,9 +19,17 @@ function App() {
     <Suspense fallback={'Loading...'}>
       <div className='appContainer'>
         <Header />
-        <About />
-        <Projects />
-        <Contact />
+
+        <Element name='about' className='element'>
+          <About />
+        </Element>
+        <Element name='projects' className='element'>
+          <Projects />
+        </Element>
+        <Element name='contact' className='element'>
+          <Contact />
+        </Element>
+
         <div id='footer'>
           <span>© 2020 Angeliki Patrinou </span>
         </div>

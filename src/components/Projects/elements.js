@@ -6,7 +6,7 @@ export const ProjectImage = styled.a`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 `
 export const ProjectText = styled.div`
   width: 100%;

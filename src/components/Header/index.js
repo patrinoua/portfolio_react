@@ -13,6 +13,7 @@ import {
   NavigationBarLine,
   Subtitle
 } from './elements'
+
 const Header = () => (
   <Background>
     <NavigationBar>
@@ -20,9 +21,15 @@ const Header = () => (
         <Name>Angeliki Patrinou</Name>
       </NavItem>
       <NavItem>
-        {/* <MenuItem href='#aboutMeSection'>About</MenuItem>
-        <MenuItem href='#projectsBlock'>Work</MenuItem>
-        <MenuItem href='#contactBlock'>Contact</MenuItem> */}
+        <MenuItem to='about' spy={true} smooth={true} duration={500}>
+          About
+        </MenuItem>
+        <MenuItem to='projects' spy={true} smooth={true} duration={500}>
+          Work
+        </MenuItem>
+        <MenuItem to='contact' spy={true} smooth={true} duration={500}>
+          Contact
+        </MenuItem>
         <GithubContainer>
           <GithubIcon href='https://github.com/patrinoua/' target='_blank' />
         </GithubContainer>
