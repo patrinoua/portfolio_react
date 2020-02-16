@@ -24,10 +24,10 @@ const Header = () => (
         <MenuItem to='about' spy={true} smooth={true} duration={500}>
           About
         </MenuItem>
-        <MenuItem to='projects' spy={true} smooth={true} duration={500}>
+        <MenuItem to='projects' spy={true} smooth={true} duration={800}>
           Work
         </MenuItem>
-        <MenuItem to='contact' spy={true} smooth={true} duration={500}>
+        <MenuItem to='contact' spy={true} smooth={true} duration={1000}>
           Contact
         </MenuItem>
         <GithubContainer>
