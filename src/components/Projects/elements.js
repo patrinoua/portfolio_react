@@ -9,6 +9,7 @@ export const ProjectImage = styled.a`
   background-size: contain;
   @media (max-width: 768px) {
     height: 50vh;
+    min-height: 280px;
     background-attachment: scroll;
   }
 `
