@@ -20,9 +20,9 @@ const Header = () => (
         <Name>Angeliki Patrinou</Name>
       </NavItem>
       <NavItem>
-        <MenuItem href='#aboutMeSection'>About</MenuItem>
+        {/* <MenuItem href='#aboutMeSection'>About</MenuItem>
         <MenuItem href='#projectsBlock'>Work</MenuItem>
-        <MenuItem href='#contactBlock'>Contact</MenuItem>
+        <MenuItem href='#contactBlock'>Contact</MenuItem> */}
         <GithubContainer>
           <GithubIcon href='https://github.com/patrinoua/' target='_blank' />
         </GithubContainer>

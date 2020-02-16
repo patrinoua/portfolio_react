@@ -56,7 +56,7 @@ export const Subtitle = styled.h2`
 
 export const MenuItem = styled.a`
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
   margin: 8px;
   @media (max-width: 768px) {
     display: none;
@@ -84,8 +84,8 @@ export const LinkedinContainer = styled(MenuIconContainer)`
 `
 export const MenuIcon = styled.a`
   margin: 2px;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   background-size: contain;
   background-repeat: no-repeat;
 `

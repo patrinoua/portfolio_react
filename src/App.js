@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import './App.css'
 import About from './components/About'
-import Project from './components/Project'
+import Projects from './components/Projects/Projects'
 import Contact from './components/Contact'
 import { H1 } from './components/Typography'
 
@@ -20,14 +20,7 @@ function App() {
       <div className='appContainer'>
         <Header />
         <About />
-        <H1>Projects</H1>
-        {projects.map(project => (
-          <Project
-            title={project.title}
-            description={project.description}
-            snapshot={project.snapshot}
-          />
-        ))}
+        <Projects />
         <Contact />
         <div id='footer'>
           <span>© 2020 Angeliki Patrinou </span>
@@ -37,7 +30,8 @@ function App() {
       <p>Step 3. Make a PWA out of it (half done)</p>
       <p>Step 4. Lazy loading (done)</p>
       <p>Step 5. Translation</p>
-      <p>Step 6. Responsiveness</p>
+      <p>Step 6. Responsiveness(done)</p>
+      <p>Step 7. connect Header navigation items to places in the screen</p>
       
       I am doing this in order to have google
       analytics enabled. Also implement routing between different pages. And
