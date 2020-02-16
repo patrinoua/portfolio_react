@@ -37,7 +37,7 @@ export const Regular = styled.div`
   font-size: 1.2em;
   line-height: 1.6;
   @media (max-width: 768px) {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 `
 export const RegularCenter = styled(Regular)`
