@@ -8,13 +8,6 @@ import { Element, animateScroll as scroll } from 'react-scroll'
 const Header = lazy(() => import('./components/Header/index'))
 
 function App() {
-  const projects = [
-    {
-      title: 'name1',
-      description: 'description1',
-      snapshot: 'snapshot..'
-    }
-  ]
   return (
     <Suspense fallback={'Loading...'}>
       <div className='appContainer'>

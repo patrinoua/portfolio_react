@@ -8,6 +8,10 @@ export const H1 = styled.h1`
 `
 export const Title = styled(H1)`
   margin-top: 140px;
+  @media (max-width: 768px) {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
 `
 export const TitleHide = styled(Title)`
   @media (max-width: 768px) {
@@ -20,6 +24,12 @@ export const H2 = styled.h2`
   font-weight: 500;
   font-size: 2em;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.5em;
+    margin: 30px;
+    margin-bottom: 10px;
+  }
 `
 
 export const Regular = styled.div`
@@ -27,7 +37,7 @@ export const Regular = styled.div`
   font-size: 1.2em;
   line-height: 1.6;
   @media (max-width: 768px) {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 `
 export const RegularCenter = styled(Regular)`

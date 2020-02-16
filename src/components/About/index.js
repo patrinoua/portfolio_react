@@ -2,14 +2,8 @@ import React, {
   // lazy,
   Suspense
 } from 'react'
-import {
-
-  AboutMe,
-  Photo,
-  RegularWithMargin,
-  Description
-} from './elements'
-import {   TitleHide, RegularHide } from '../Typography'
+import { AboutMe, Photo, RegularWithMargin, Description } from './elements'
+import { TitleHide, RegularHide } from '../Typography'
 
 const About = () => (
   <Suspense fallback={'Loading...'}>

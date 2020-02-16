@@ -7,15 +7,22 @@ export const ProjectImage = styled.a`
   background-attachment: fixed;
   background-position: center center;
   background-size: contain;
+  @media (max-width: 768px) {
+    height: 50vh;
+    background-attachment: scroll;
+  }
 `
 export const ProjectText = styled.div`
-  width: 100%;
+  width: 90%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   margin: 50px;
+  @media (max-width: 768px) {
+    margin: 20px;
+  }
   // box-shadow: 1px 1px 18px 13px white;
 `
 export const ProjectContainer = styled.div`

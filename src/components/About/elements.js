@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import { H1, Regular } from '../Typography'
 
-
 export const AboutMe = styled.div`
   display: flex;
   width: 100%;
@@ -40,7 +39,7 @@ export const Description = styled(AboutMeBox)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   margin: 0 20px;
   @media (max-width: 768px) {
     margin: 0 40px;
@@ -48,7 +47,6 @@ export const Description = styled(AboutMeBox)`
 `
 export const RegularWithMargin = styled(Regular)`
   @media (max-width: 768px) {
-    
     margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
