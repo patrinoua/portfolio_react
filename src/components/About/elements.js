@@ -21,6 +21,8 @@ export const AboutMeBox = styled.div`
   margin: 0 20px;
   @media (max-width: 768px) {
     flex-direction: column;
+    width: 80%;
+    min-height: 220px;
   }
 `
 export const Photo = styled(AboutMeBox)`
@@ -39,7 +41,6 @@ export const Description = styled(AboutMeBox)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // align-items: center;
   margin: 0 20px;
   @media (max-width: 768px) {
     margin: 0 40px;

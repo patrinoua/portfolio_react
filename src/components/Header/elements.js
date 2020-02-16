@@ -2,26 +2,33 @@ import styled from 'styled-components'
 import { Link, animateScroll as scroll } from 'react-scroll'
 
 export const Background = styled.div`
-  // height: 300px;
   width: 100%;
   background-size: cover;
   display: flex;
   flex-direction: column;
   color: white;
   background-image: url('assets/background.jpg');
-  text-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
+  background-position: center;
+  text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.8);
+  @media (max-width: 768px) {
+    height: 100vh;
+  }
 `
 
 export const NavigationBar = styled.div`
   // background: black;
-  height: 100px;
+  // height: 100px;
   display: flex;
   justify-content: space-between;
   margin: 0 60px;
+  height: 15vh;
+  max-height: 130px;
   @media (max-width: 768px) {
-    margin: 0 30px;
+    margin: 0 5vw;
+    height: 20vh;
   }
 `
+
 export const NavigationBarLine = styled.div`
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 `
@@ -52,7 +59,8 @@ export const Subtitle = styled.h2`
   @media (max-width: 768px) {
     width: 90%;
     font-size: 3em;
-    margin-left: 30px;
+    margin-left: 5vw;
+    height: 80vh;
   }
 `
 
