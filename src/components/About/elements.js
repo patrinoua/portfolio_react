@@ -24,6 +24,7 @@ export const AboutMeBox = styled.div`
     flex-direction: column;
     width: 80%;
     min-height: 220px;
+    margin: 0;
   }
 `
 export const Photo = styled(AboutMeBox)`
