@@ -33,3 +33,12 @@ export const ProjectText = styled.div`
   }
   // box-shadow: 1px 1px 18px 13px white;
 `
+export const ProjectURL = styled.a`
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 0.9em;
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+  }
+`

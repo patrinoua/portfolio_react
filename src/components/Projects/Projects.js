@@ -4,7 +4,12 @@ import React, {
 } from 'react'
 
 import { Title, H2, RegularCenter } from '../Typography'
-import { ProjectContainer, ProjectImage, ProjectText } from './elements'
+import {
+  ProjectContainer,
+  ProjectImage,
+  ProjectText,
+  ProjectURL
+} from './elements'
 
 var fs = require('fs')
 
@@ -50,18 +55,14 @@ const Projects = () => {
               <RegularCenter>{description}</RegularCenter>
               <br />
               <RegularCenter>{tryMsg}</RegularCenter>
-              <RegularCenter>
-                <a href={heroku_url} target='_blank'>
-                  {heroku_url}
-                </a>
-              </RegularCenter>
+              <ProjectURL href={heroku_url} target='_blank'>
+                {heroku_url}
+              </ProjectURL>
               <br />
-              <RegularCenter>{codeMsg} </RegularCenter>
-              <RegularCenter>
-                <a href={github_url} target='_blank'>
-                  {github_url}
-                </a>
-              </RegularCenter>
+              <RegularCenter>{codeMsg}</RegularCenter>
+              <ProjectURL href={github_url} target='_blank'>
+                {github_url}
+              </ProjectURL>
               <br />
               <RegularCenter>{createdWith}</RegularCenter>
             </ProjectText>
