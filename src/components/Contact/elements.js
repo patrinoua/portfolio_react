@@ -17,6 +17,7 @@ export const ContactBlock = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.8);
 `
 
 export const IconsContainer = styled.div`
