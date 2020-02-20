@@ -19,7 +19,7 @@ const About = () => (
           using the latest technologies.
         </RegularWithMargin>
         <br />
-        <RegularHide>My CV</RegularHide>
+        {/* <RegularHide>My CV</RegularHide> */}
       </Description>
     </AboutMe>
   </Suspense>
