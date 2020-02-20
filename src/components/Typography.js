@@ -8,6 +8,7 @@ export const H1 = styled.h1`
 `
 export const Title = styled(H1)`
   margin-top: 140px;
+  margin-bottom: 140px;
   @media (max-width: 768px) {
     margin-top: 60px;
     margin-bottom: 30px;
@@ -19,7 +20,8 @@ export const TitleHide = styled(Title)`
   }
 `
 export const H2 = styled.h2`
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   font-family: 'Quicksand', 'Arial Light', sans-serif;
   font-weight: 500;
   font-size: 2em;
@@ -27,8 +29,7 @@ export const H2 = styled.h2`
 
   @media (max-width: 768px) {
     font-size: 1.5em;
-    margin: 30px;
-    margin-bottom: 10px;
+    margin-top: 20px;
   }
 `
 

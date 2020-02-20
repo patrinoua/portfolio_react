@@ -6,18 +6,20 @@ export const ProjectContainer = styled.div`
   justify-content: center;
   align-items: center;
 `
-
 export const ProjectImage = styled.a`
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: top center;
   background-size: contain;
+  background-image: ${props => `url(./assets/projects/${props.project}.png)`};
   @media (max-width: 768px) {
     height: 50vh;
     min-height: 280px;
     background-attachment: scroll;
+    background-image: ${props =>
+      `url(./assets/projects/${props.project}-mobile.png)`};
   }
 `
 export const ProjectText = styled.div`
@@ -27,9 +29,9 @@ export const ProjectText = styled.div`
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 50px;
+  margin-bottom: 150px;
   @media (max-width: 768px) {
-    margin: 20px;
+    margin-bottom: 80px;
   }
   // box-shadow: 1px 1px 18px 13px white;
 `

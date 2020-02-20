@@ -1,7 +1,7 @@
 {
   "project": "connect4",
   "displayName": "Connect 4",
-  "description": "Connect 4 is an application with minimalist Design and Transitions",
+  "description": "Minimalist Design & Transitions",
   "tryMsg": "Play at",
   "codeMsg": "Check out the code",
   "createdWith": "Created with JavaScript & jQuery",

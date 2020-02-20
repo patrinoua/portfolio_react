@@ -43,14 +43,12 @@ const Projects = () => {
           project
         }) => (
           <ProjectContainer>
-            <H2>{displayName}</H2>
             <ProjectImage
               href={heroku_url}
               target='_blank'
-              style={{
-                backgroundImage: `url(./assets/projects/${project}.png)`
-              }}
+              project={project}
             ></ProjectImage>
+            <H2>{displayName}</H2>
             <ProjectText>
               <RegularCenter>{description}</RegularCenter>
               <br />
