@@ -8,7 +8,9 @@ export const Title = styled(H1)``
 
 export const ContactBlock = styled.div`
   margin-top: 50px;
-  background: #100d13;
+  // background: #100d13;
+  background-image: url(assets/background.jpg);
+  background-position: bottom;
   width: 100%;
   color: white;
   display: flex;
