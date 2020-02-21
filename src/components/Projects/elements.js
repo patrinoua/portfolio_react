@@ -14,7 +14,7 @@ export const ProjectImage = styled.a`
   background-position: top center;
   background-size: contain;
   background-image: ${props => `url(./assets/projects/${props.project}.png)`};
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     height: 50vh;
     min-height: 280px;
     background-attachment: scroll;
@@ -30,7 +30,7 @@ export const ProjectText = styled.div`
   justify-content: center;
   align-content: center;
   margin-bottom: 150px;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     margin-bottom: 80px;
   }
   // box-shadow: 1px 1px 18px 13px white;
@@ -40,6 +40,11 @@ export const ProjectURL = styled.a`
   text-align: center;
   text-decoration: underline;
   font-size: 0.9em;
+  margin: 5px;
+  @media (max-width: 1000px) {
+    margin: 5px;
+    font-size: 1.2em;
+  }
   @media (max-width: 768px) {
     font-size: 0.8em;
   }

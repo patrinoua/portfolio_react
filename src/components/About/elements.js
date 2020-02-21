@@ -7,7 +7,7 @@ export const AboutMe = styled.div`
   height: 100%;
   justify-content: space-evenly;
   align-items: center;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
   position: relative;
@@ -20,7 +20,7 @@ export const AboutMeBox = styled.div`
   max-width: 700px;
   max-height: 700px;
   margin: 0 20px;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
     width: 80%;
     min-height: 220px;
@@ -32,11 +32,11 @@ export const Photo = styled(AboutMeBox)`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  @media (max-width: 768px) {
-    // margin-top: 50px;
+  @media (max-width: 1000px) {
     background-size: cover;
     width: 100%;
-    height: 500px;
+    min-height: 500px;
+    height: 100vh;
   }
 `
 export const Description = styled(AboutMeBox)`
@@ -44,12 +44,12 @@ export const Description = styled(AboutMeBox)`
   flex-direction: column;
   justify-content: center;
   margin: 0 20px;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     margin: 0 40px;
   }
 `
 export const RegularWithMargin = styled(Regular)`
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;

@@ -4,7 +4,7 @@ import About from './components/About'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact'
 import { Element, animateScroll as scroll } from 'react-scroll'
-
+import { Regular } from './components/Typography'
 const Header = lazy(() => import('./components/Header/index'))
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
         </Element>
 
         <div id='footer'>
-          <span>© 2020 Angeliki Patrinou </span>
+          <Regular>© 2020 Angeliki Patrinou </Regular>
         </div>
         {/* <p>Things to implement</p>
       <p>Step 2. Upload it to firebase (done)</p>

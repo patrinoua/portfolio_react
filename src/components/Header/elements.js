@@ -10,7 +10,7 @@ export const Background = styled.div`
   background-image: url('assets/background.jpg');
   background-position: center;
   text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.8);
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     height: 100vh;
     background-attachment: fixed;
   }
@@ -43,8 +43,12 @@ export const Name = styled.div`
   display: flex;
   align-items: center;
   font-weight: 500;
+  @media (max-width: 1000px) {
+    font-size: 3em;
+    line-height: 1.6;
+  }
   @media (max-width: 768px) {
-    font-size: 1.3em;
+    font-size: 1.6em;
     font-weight: 600;
   }
 `
@@ -57,6 +61,10 @@ export const Subtitle = styled.h2`
   align-items: center;
   font-family: 'Quattrocento', 'Helvetica', serif;
   margin-left: 60px;
+  @media (max-width: 1000px) {
+    font-size: 7em;
+    line-height: 1.6;
+  }
   @media (max-width: 768px) {
     width: 90%;
     font-size: 3em;
@@ -70,6 +78,10 @@ export const MenuItem = styled(Link)`
   color: rgba(255, 255, 255, 0.8);
   margin: 8px;
   font-weight: 500;
+  @media (max-width: 1000px) {
+    // font-size: 2em;
+    display: none;
+  }
   @media (max-width: 768px) {
     display: none;
   }
@@ -83,6 +95,11 @@ export const MenuIconContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 3px;
+  @media (max-width: 1000px) {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+  }
 `
 export const GithubContainer = styled(MenuIconContainer)`
   &:hover {
@@ -101,6 +118,11 @@ export const MenuIcon = styled.a`
   height: 16px;
   background-size: contain;
   background-repeat: no-repeat;
+  @media (max-width: 1000px) {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
 `
 export const GithubIcon = styled(MenuIcon)`
   background-image: url('assets/github.png');

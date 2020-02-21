@@ -5,16 +5,21 @@ export const H1 = styled.h1`
   font-family: 'Quicksand', 'Arial Light', sans-serif;
   font-weight: 500;
   font-size: 2.6em;
+  @media (max-width: 1000px) {
+    font-size: 4em;
+  }
+  @media (max-width: 768px) {
+    font-size: 3em;
+  }
 `
 export const Title = styled(H1)`
   margin-top: 140px;
   margin-bottom: 140px;
-  @media (max-width: 768px) {
-    margin-top: 60px;
-    margin-bottom: 30px;
-  }
 `
 export const TitleHide = styled(Title)`
+  @media (max-width: 1000px) {
+    // display: none;
+  }  
   @media (max-width: 768px) {
     display: none;
   }
@@ -27,6 +32,10 @@ export const H2 = styled.h2`
   font-size: 2em;
   text-align: center;
 
+  @media (max-width: 1000px) {
+    font-size: 2.5em;
+    margin-top: 30px;
+  }
   @media (max-width: 768px) {
     font-size: 1.5em;
     margin-top: 20px;
@@ -37,6 +46,9 @@ export const Regular = styled.div`
   color: black;
   font-size: 1.2em;
   line-height: 1.6;
+  @media (max-width: 1000px) {
+    font-size: 1.5em;
+  }
   @media (max-width: 768px) {
     font-size: 1em;
   }
@@ -48,7 +60,7 @@ export const RegularCenter = styled(Regular)`
   text-align: center;
 `
 export const RegularHide = styled(Regular)`
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 `
