@@ -36,6 +36,11 @@ export const MenuIconContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 3px;
+  @media (max-width: 1000px) {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
 `
 export const GithubContainer = styled(MenuIconContainer)`
   &:hover {

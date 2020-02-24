@@ -13,6 +13,7 @@ export const Background = styled.div`
   @media (max-width: 1000px) {
     height: 100vh;
     background-attachment: fixed;
+    background-position: top;
   }
 `
 
@@ -49,7 +50,7 @@ export const Name = styled.div`
   }
   @media (max-width: 768px) {
     font-size: 1.6em;
-    font-weight: 600;
+    font-weight: 500;
   }
 `
 export const Subtitle = styled.h2`
@@ -100,6 +101,11 @@ export const MenuIconContainer = styled.div`
     height: 50px;
     margin: 15px;
   }
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+  }
 `
 export const GithubContainer = styled(MenuIconContainer)`
   &:hover {
@@ -121,6 +127,11 @@ export const MenuIcon = styled.a`
   @media (max-width: 1000px) {
     width: 40px;
     height: 40px;
+    margin: 5px;
+  }
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
     margin: 5px;
   }
 `
