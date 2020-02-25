@@ -1,15 +1,23 @@
 import React, {
   // lazy,
   Suspense
-} from 'react'
-import { AboutMe, Photo, RegularWithMargin, Description } from './elements'
-import { TitleHide, RegularHide } from '../Typography'
+} from "react";
+import {
+  AboutMe,
+  Photo,
+  PhotoContainer,
+  RegularWithMargin,
+  Description
+} from "./elements";
+import { TitleHide, RegularHide } from "../Typography";
 
 const About = () => (
-  <Suspense fallback={'Loading...'}>
+  <Suspense fallback={"Loading..."}>
     <TitleHide>About</TitleHide>
     <AboutMe>
-      <Photo></Photo>
+      <PhotoContainer>
+        <Photo src="assets/angeliki-mik.png" />
+      </PhotoContainer>
       <Description>
         <RegularWithMargin>
           Full Stack JavaScript Developer based in Berlin. I have studied
@@ -23,6 +31,6 @@ const About = () => (
       </Description>
     </AboutMe>
   </Suspense>
-)
+);
 
-export default About
+export default About;
