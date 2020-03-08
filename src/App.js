@@ -1,29 +1,29 @@
-import React, { lazy, Suspense, useEffect } from "react";
-import "./App.css";
-import About from "./components/About";
-import Projects from "./components/Projects/Projects";
-import Contact from "./components/Contact";
-import { Element, animateScroll as scroll } from "react-scroll";
-import { Regular } from "./components/Typography";
-import ReactGa from "react-ga";
+import React, { lazy, Suspense, useEffect } from 'react'
+import './App.css'
+import About from './components/About'
+import Projects from './components/Projects/Projects'
+import Contact from './components/Contact'
+import { Element, animateScroll as scroll } from 'react-scroll'
+import { Regular } from './components/Typography'
+import ReactGa from 'react-ga'
 
-const Header = lazy(() => import("./components/Header/index"));
+const Header = lazy(() => import('./components/Header/index'))
 
 function App() {
   useEffect(() => {
-    ReactGa.initialize("UA-145732904-1");
-    ReactGa.pageview("/");
-  }, []);
+    ReactGa.initialize('UA-145732904-1')
+    ReactGa.pageview('/')
+  }, [])
 
   return (
     <Suspense
-      fallback={"Loading..."}
+      fallback={'Loading...'}
       style={{
-        width: " 100%",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center"
+        width: ' 100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
       }}
     >
       <div className="appContainer">
@@ -31,7 +31,7 @@ function App() {
         <Element
           name="about"
           className="element"
-          style={{ position: "relative" }}
+          style={{ position: 'relative' }}
         >
           <About />
         </Element>
@@ -61,7 +61,7 @@ function App() {
       */}
       </div>
     </Suspense>
-  );
+  )
 }
 
-export default App;
+export default App
