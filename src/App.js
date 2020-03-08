@@ -1,13 +1,20 @@
-import React, { lazy, Suspense } from 'react'
+import React, { lazy, Suspense, useEffect } from 'react'
 import './App.css'
 import About from './components/About'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact'
 import { Element, animateScroll as scroll } from 'react-scroll'
 import { Regular } from './components/Typography'
+import ReactGa from 'react-ga'
+
 const Header = lazy(() => import('./components/Header/index'))
 
 function App() {
+  useEffect(() => {
+    ReactGa.initialize('UA-145732904-1')
+    ReactGa.pageview('/')
+  }, [])
+
   return (
     <Suspense
       fallback={'Loading...'}
@@ -19,23 +26,23 @@ function App() {
         alignItems: 'center'
       }}
     >
-      <div className='appContainer'>
+      <div className="appContainer">
         <Header />
         <Element
-          name='about'
-          className='element'
+          name="about"
+          className="element"
           style={{ position: 'relative' }}
         >
           <About />
         </Element>
-        <Element name='projects' className='element'>
+        <Element name="projects" className="element">
           <Projects />
         </Element>
-        <Element name='contact' className='element'>
+        <Element name="contact" className="element">
           <Contact />
         </Element>
 
-        <div id='footer'>
+        <div id="footer">
           <Regular>© 2020 Angeliki Patrinou </Regular>
         </div>
         {/* <p>Things to implement</p>
