@@ -32,7 +32,7 @@ export const ProjectText = styled.div`
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding-bottom: 60px;
+  padding-bottom: 140px;
   @media (max-width: 1000px) {
     margin-bottom: 80px;
   }
