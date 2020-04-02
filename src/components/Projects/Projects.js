@@ -16,6 +16,7 @@ var fs = require('fs')
 const Projects = () => {
   const projects = [
     '10_Connect4',
+    '15_Ioanna',
     '20_PinApp',
     '30_Imageboard',
     '60_klazaridis'
@@ -45,20 +46,20 @@ const Projects = () => {
           <ProjectContainer>
             <ProjectImage
               href={heroku_url}
-              target='_blank'
+              target="_blank"
               project={project}
             ></ProjectImage>
-            <H2>{displayName}</H2>
             <ProjectText>
+              <H2>{displayName}</H2>
               <RegularCenter>{description}</RegularCenter>
               <br />
               <RegularCenter>{tryMsg}</RegularCenter>
-              <ProjectURL href={heroku_url} target='_blank'>
+              <ProjectURL href={heroku_url} target="_blank">
                 {heroku_url}
               </ProjectURL>
               <br />
               <RegularCenter>{codeMsg}</RegularCenter>
-              <ProjectURL href={github_url} target='_blank'>
+              <ProjectURL href={github_url} target="_blank">
                 {github_url}
               </ProjectURL>
               <br />

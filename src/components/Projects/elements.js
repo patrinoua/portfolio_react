@@ -7,13 +7,14 @@ export const ProjectContainer = styled.div`
   align-items: center;
 `
 export const ProjectImage = styled.a`
-  height: 70vh;
+  height: 55vh;
   width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: top center;
+  background-position: center center;
   background-size: contain;
   background-image: ${props => `url(./assets/projects/${props.project}.png)`};
+
   @media (max-width: 1000px) {
     height: 50vh;
     min-height: 280px;
@@ -23,24 +24,25 @@ export const ProjectImage = styled.a`
   }
 `
 export const ProjectText = styled.div`
-  width: 90%;
+  box-shadow: 1px 1px 18px 20px white;
+  height: 40vh;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-bottom: 150px;
+  padding-bottom: 60px;
   @media (max-width: 1000px) {
     margin-bottom: 80px;
   }
-  // box-shadow: 1px 1px 18px 13px white;
 `
 export const ProjectURL = styled.a`
   color: black;
   text-align: center;
   text-decoration: underline;
-  font-size: 0.9em;
-  margin: 5px;
+  font-size: 1.2em;
+  margin: 15px;
   @media (max-width: 1000px) {
     margin: 5px;
     font-size: 1.2em;

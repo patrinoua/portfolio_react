@@ -26,7 +26,7 @@ export const TitleHide = styled(Title)`
 `
 export const H2 = styled.h2`
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-family: 'Quicksand', 'Arial Light', sans-serif;
   font-weight: 500;
   font-size: 2em;
