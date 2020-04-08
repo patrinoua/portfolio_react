@@ -1,7 +1,7 @@
 {
   "project": "klazaridis",
   "displayName": "Custom Portfolio Webpage",
-  "description": "Designed and development of this Portfolio showcasing Scientific Projects",
+  "description": "Design and development of this Portfolio showcasing Scientific Projects",
   "heroku_url": "http://klazaridis.com",
   "createdWith": "Built with Handlebars & Vue",
   "comment_link": " ",
