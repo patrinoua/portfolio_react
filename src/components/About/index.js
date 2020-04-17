@@ -1,22 +1,22 @@
 import React, {
   // lazy,
-  Suspense
-} from "react";
+  Suspense,
+} from 'react'
 import {
   AboutMe,
   Photo,
   PhotoContainer,
   RegularWithMargin,
-  Description
-} from "./elements";
-import { TitleHide, RegularHide } from "../Typography";
+  Description,
+} from './elements'
+import { TitleHide, RegularHide } from '../Typography'
 
 const About = () => (
-  <Suspense fallback={"Loading..."}>
+  <Suspense fallback={'Loading...'}>
     <TitleHide>About</TitleHide>
     <AboutMe>
       <PhotoContainer>
-        <Photo src="assets/angeliki-mik.png" />
+        <Photo src="assets/angeliki-mik-1.png" />
       </PhotoContainer>
       <Description>
         <RegularWithMargin>
@@ -31,6 +31,6 @@ const About = () => (
       </Description>
     </AboutMe>
   </Suspense>
-);
+)
 
-export default About;
+export default About
