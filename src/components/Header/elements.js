@@ -4,11 +4,12 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 export const Background = styled.div`
   width: 100%;
   background-size: cover;
+  background-position: fixed;
   display: flex;
   flex-direction: column;
   color: white;
-  background-image: url('assets/background.jpg');
-  background-position: center;
+  background-image: url('assets/angeliki-mik-1.png');
+  background-position: top;
   text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.8);
   @media (max-width: 1000px) {
     height: 100vh;
@@ -21,8 +22,9 @@ export const NavigationBar = styled.div`
   // background: black;
   // height: 100px;
   display: flex;
-  justify-content: space-between;
-  margin: 0 60px;
+  justify-content: flex-end;
+  // margin: 0 60px;
+  background: linear-gradient(to bottom, black, transparent);
   height: 15vh;
   max-height: 130px;
   @media (max-width: 768px) {
@@ -140,6 +142,7 @@ export const GithubIcon = styled(MenuIcon)`
 `
 export const LinkedinIcon = styled(MenuIcon)`
   background-image: url('assets/linkedin.png');
+  margin-right: 50px;
 `
 export const SeparatingLine = styled.div`
   border-right: 1px solid rgba(255, 255, 255, 0.5);

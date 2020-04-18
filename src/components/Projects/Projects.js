@@ -1,6 +1,6 @@
 import React, {
   // lazy,
-  Suspense
+  Suspense,
 } from 'react'
 
 import { Title, H2, RegularCenter } from '../Typography'
@@ -8,7 +8,7 @@ import {
   ProjectContainer,
   ProjectImage,
   ProjectText,
-  ProjectURL
+  ProjectURL,
 } from './elements'
 
 var fs = require('fs')
@@ -16,14 +16,14 @@ var fs = require('fs')
 const Projects = () => {
   const projects = [
     '10_Connect4',
-    '15_Ioanna',
+    // '15_Ioanna',
     '20_PinApp',
     '30_Imageboard',
-    '60_klazaridis'
+    '60_klazaridis',
   ]
   const listOfProjects = []
   {
-    projects.forEach(project => {
+    projects.forEach((project) => {
       const currentProject = require(`./projectsData/${project}/project.json`)
       listOfProjects.push(currentProject)
     })
@@ -41,7 +41,7 @@ const Projects = () => {
           createdWith,
           heroku_url,
           github_url,
-          project
+          project,
         }) => (
           <ProjectContainer>
             <ProjectImage

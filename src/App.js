@@ -6,7 +6,12 @@ import Contact from './components/Contact'
 import { Element, animateScroll as scroll } from 'react-scroll'
 import { Regular } from './components/Typography'
 import ReactGa from 'react-ga'
-
+import styled from 'styled-components'
+const Container = styled.div`
+  max-width: 1200px;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+  background: white;
+`
 const Header = lazy(() => import('./components/Header/index'))
 
 function App() {
@@ -23,29 +28,31 @@ function App() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
       }}
     >
-      <div className="appContainer">
-        <Header />
-        <Element
-          name="about"
-          className="element"
-          style={{ position: 'relative' }}
-        >
-          <About />
-        </Element>
-        <Element name="projects" className="element">
-          <Projects />
-        </Element>
-        <Element name="contact" className="element">
-          <Contact />
-        </Element>
+      <div className="appContainer" style={{ background: 'rgb(239,239,239);' }}>
+        {/* <div className="appContainer" style={{ background: 'black' }}> */}
+        <Container>
+          <Header />
+          <Element
+            name="about"
+            className="element"
+            style={{ position: 'relative' }}
+          >
+            <About />
+          </Element>
+          <Element name="projects" className="element">
+            <Projects />
+          </Element>
+          <Element name="contact" className="element">
+            <Contact />
+          </Element>
 
-        <div id="footer">
-          <Regular>© 2020 Angeliki Patrinou </Regular>
-        </div>
-        {/* <p>Things to implement</p>
+          <div id="footer">
+            <Regular>© 2020 Angeliki Patrinou </Regular>
+          </div>
+          {/* <p>Things to implement</p>
       <p>Step 2. Upload it to firebase (done)</p>
       <p>Step 3. Make a PWA out of it (half done)</p>
       <p>Step 4. Lazy loading (done)</p>
@@ -59,6 +66,7 @@ function App() {
       - have different pages with services, showcase projects etc. 
       
       */}
+        </Container>
       </div>
     </Suspense>
   )

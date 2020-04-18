@@ -4,7 +4,7 @@ export const H1 = styled.h1`
   margin: 50px;
   font-family: 'Quicksand', 'Arial Light', sans-serif;
   font-weight: 500;
-  font-size: 2.6em;
+  font-size: 2.8em;
   @media (max-width: 1000px) {
     font-size: 4em;
   }
@@ -13,13 +13,12 @@ export const H1 = styled.h1`
   }
 `
 export const Title = styled(H1)`
-  margin-top: 140px;
-  margin-bottom: 140px;
+  margin: 100px 0;
 `
 export const TitleHide = styled(Title)`
   @media (max-width: 1000px) {
     // display: none;
-  }  
+  }
   @media (max-width: 768px) {
     display: none;
   }
@@ -29,9 +28,9 @@ export const H2 = styled.h2`
   margin-bottom: 50px;
   font-family: 'Quicksand', 'Arial Light', sans-serif;
   font-weight: 500;
-  font-size: 2em;
+  font-size: 2.5em;
+  color: #2a2a2a;
   text-align: center;
-
   @media (max-width: 1000px) {
     font-size: 2.5em;
     margin-top: 30px;

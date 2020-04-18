@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { H1, Regular } from "../Typography";
+import styled from 'styled-components'
+import { H1, Regular } from '../Typography'
 
 export const AboutMe = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ export const AboutMe = styled.div`
     flex-direction: column;
   }
   position: relative;
-`;
+`
 export const AboutMeBox = styled.div`
   width: 50%;
   height: 50%;
@@ -26,10 +26,10 @@ export const AboutMeBox = styled.div`
     min-height: 220px;
     margin: 0;
   }
-`;
+`
 export const Photo = styled.img`
   width: 100%;
-`;
+`
 
 export const PhotoContainer = styled(AboutMeBox)`
   margin-right: 30px;
@@ -39,20 +39,34 @@ export const PhotoContainer = styled(AboutMeBox)`
     min-height: 500px;
     height: 100vh;
   }
-`;
-export const Description = styled(AboutMeBox)`
+`
+export const Description = styled.div`
+  width: 80%;
+  // height: 80%;
+  min-width: 300px;
+  // min-height: 300px;
+  text-align: justify;
+  max-width: 800px;
+  max-height: 700px;
+  margin: 0 60px;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    width: 80%;
+    min-height: 220px;
+    margin: 0;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30px;
+  // margin-left: 30px;
   @media (max-width: 1000px) {
     margin: 0 40px;
   }
-`;
+`
 export const RegularWithMargin = styled(Regular)`
   @media (max-width: 1000px) {
     margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
   }
-`;
+`
