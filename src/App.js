@@ -7,6 +7,15 @@ import { Element, animateScroll as scroll } from 'react-scroll'
 import { Regular } from './components/Typography'
 import ReactGa from 'react-ga'
 import styled from 'styled-components'
+const AppContainer = styled.div`
+  background: whitesmoke;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 1000px) {
+    padding: 0;
+  }
+`
 const Container = styled.div`
   max-width: 1200px;
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
@@ -24,14 +33,14 @@ function App() {
     <Suspense
       fallback={'Loading...'}
       style={{
-        width: ' 100%',
+        width: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
       }}
     >
-      <div className="appContainer" style={{ background: 'rgb(239,239,239);' }}>
+      <AppContainer>
         {/* <div className="appContainer" style={{ background: 'black' }}> */}
         <Container>
           <Header />
@@ -48,10 +57,6 @@ function App() {
           <Element name="contact" className="element">
             <Contact />
           </Element>
-
-          <div id="footer">
-            <Regular>© 2020 Angeliki Patrinou </Regular>
-          </div>
           {/* <p>Things to implement</p>
       <p>Step 2. Upload it to firebase (done)</p>
       <p>Step 3. Make a PWA out of it (half done)</p>
@@ -67,7 +72,7 @@ function App() {
       
       */}
         </Container>
-      </div>
+      </AppContainer>
     </Suspense>
   )
 }

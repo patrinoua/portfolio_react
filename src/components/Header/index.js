@@ -17,9 +17,9 @@ import {
 const Header = () => (
   <Background>
     <NavigationBar>
-      {/* <NavItem>
+      <NavItem>
         <Name>Angeliki Patrinou</Name>
-      </NavItem> */}
+      </NavItem>
       <NavItem>
         <MenuItem to="about" spy={true} smooth={true} duration={500}>
           About
@@ -40,12 +40,12 @@ const Header = () => (
           />
         </LinkedinContainer>
         {/* <SeparatingLine />
-        <MenuItem>Languages</MenuItem> */}
+  <MenuItem>Languages</MenuItem> */}
       </NavItem>
     </NavigationBar>
     {/* <NavigationBarLine /> */}
     {/* <Subtitle>Full Stack Developer</Subtitle> */}
-    <Subtitle>Angeliki Patrinou</Subtitle>
+    {/* <Subtitle>Angeliki Patrinou</Subtitle> */}
   </Background>
 )
 

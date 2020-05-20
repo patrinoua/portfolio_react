@@ -1,13 +1,13 @@
 {
   "project": "klazaridis",
-  "displayName": "Custom Portfolio Webpage",
-  "description": "Design and development of this Portfolio showcasing Scientific Projects",
+  "displayName": "Scientific Portfolio",
+  "description": "Design and development for this Portfolio showcasing Scientific Projects.",
   "heroku_url": "http://klazaridis.com",
   "createdWith": "Built with Handlebars & Vue",
   "comment_link": " ",
   "comment_url": " ",
 
-  "displayNameGr": "Custom Portfolio Webpage",
-  "descriptionGr": "Σχεδίασα και ανέπτυξα αυτό το Πορτφόλιο στο οποίο μπορεί κάποιος να μάθει περισσότερα για ερευνητικά projects",
+  "displayNameGr": "Επιστημονικό Portfolio",
+  "descriptionGr": "Πορτφόλιο όπου μπορεί κάποιος να μάθει περισσότερα για ερευνητικά projects.",
   "createdWithGr": "Δημιουργήθηκε με χρήση Handlebars & Vue"
 }

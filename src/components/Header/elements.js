@@ -3,17 +3,21 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 
 export const Background = styled.div`
   width: 100%;
+  min-height: 400px;
+  height: 50vh;
   background-size: cover;
-  background-position: fixed;
   display: flex;
   flex-direction: column;
   color: white;
   background-image: url('assets/angeliki-mik-1.png');
+  background-repeat: no-repeat;
   background-position: top;
   text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.8);
   @media (max-width: 1000px) {
+    min-height: auto;
     height: 100vh;
-    background-attachment: fixed;
+    background-size: auto;
+    // background-attachment: fixed;
     background-position: top;
   }
 `
@@ -22,14 +26,19 @@ export const NavigationBar = styled.div`
   // background: black;
   // height: 100px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   // margin: 0 60px;
   background: linear-gradient(to bottom, black, transparent);
   height: 15vh;
   max-height: 130px;
   @media (max-width: 768px) {
-    margin: 0 5vw;
+    // padding: 0 5vw;
+    padding: 15px;
     height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
   }
 `
 
@@ -40,6 +49,12 @@ export const NavigationBarLine = styled.div`
 export const NavItem = styled.div`
   display: flex;
   align-items: center;
+  padding: 0 50px;
+  @media (max-width: 768px) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
 `
 export const Name = styled.div`
   font-size: 2.2em;
@@ -142,7 +157,6 @@ export const GithubIcon = styled(MenuIcon)`
 `
 export const LinkedinIcon = styled(MenuIcon)`
   background-image: url('assets/linkedin.png');
-  margin-right: 50px;
 `
 export const SeparatingLine = styled.div`
   border-right: 1px solid rgba(255, 255, 255, 0.5);

@@ -24,8 +24,10 @@ export const ProjectImage = styled.a`
     })`};
 
   @media (max-width: 1000px) {
+    margin-bottom: 30px;
     height: 50vh;
     min-height: 280px;
+    width: 100%;
     background-attachment: scroll;
     background-image: ${(props) =>
       `url(./assets/projects/${props.project}-mobile.${
@@ -34,18 +36,17 @@ export const ProjectImage = styled.a`
   }
 `
 export const ProjectText = styled.div`
-  // box-shadow: 1px 1px 18px 20px white;
-  height: 40vh;
   width: 100%;
   max-width: 800px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   padding-bottom: 180px;
   @media (max-width: 1000px) {
-    margin-bottom: 80px;
+    height: auto;
+    padding-bottom: 130px;
   }
 `
 export const ProjectURL = styled.a`
