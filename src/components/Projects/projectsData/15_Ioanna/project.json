@@ -1,0 +1,18 @@
+{
+  "project": "ioanna",
+  "displayName": "Ioanna Kolokytha",
+  "description": "Design & Development",
+  "tryMsg": "Book an appointment",
+  "createdWith": "Created with React & hosted on Firebase",
+  "heroku_url": "https://ioannakolokytha.com",
+  "comment": "",
+  "comment_link": "",
+  "comment_url": "",
+
+  "displayNameGr": "Ιωάννα Κολοκυθά",
+  "descriptionGr": "Ιστοσελίδα για την Ιωάννα Κολοκυθά, ψυχολόγο, ψυχοθεραπεύτρια",
+  "tryMsgGr": "Κλείστε Ραντεβού",
+  "codeMsgGr": "Δείτε τον κώδικα",
+  "createdWithGr": "Δημιουργήθηκε με χρήση React & Firebase",
+  "commentGr": ""
+}

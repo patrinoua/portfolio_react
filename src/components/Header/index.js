@@ -11,7 +11,7 @@ import {
   LinkedinIcon,
   // SeparatingLine,
   NavigationBarLine,
-  Subtitle
+  Subtitle,
 } from './elements'
 
 const Header = () => (
@@ -21,30 +21,31 @@ const Header = () => (
         <Name>Angeliki Patrinou</Name>
       </NavItem>
       <NavItem>
-        <MenuItem to='about' spy={true} smooth={true} duration={500}>
+        <MenuItem to="about" spy={true} smooth={true} duration={500}>
           About
         </MenuItem>
-        <MenuItem to='projects' spy={true} smooth={true} duration={800}>
+        <MenuItem to="projects" spy={true} smooth={true} duration={800}>
           Work
         </MenuItem>
-        <MenuItem to='contact' spy={true} smooth={true} duration={1000}>
+        <MenuItem to="contact" spy={true} smooth={true} duration={1000}>
           Contact
         </MenuItem>
         <GithubContainer>
-          <GithubIcon href='https://github.com/patrinoua/' target='_blank' />
+          <GithubIcon href="https://github.com/patrinoua/" target="_blank" />
         </GithubContainer>
         <LinkedinContainer>
           <LinkedinIcon
-            href='https://www.linkedin.com/in/patrinoua/'
-            target='_blank'
+            href="https://www.linkedin.com/in/patrinoua/"
+            target="_blank"
           />
         </LinkedinContainer>
         {/* <SeparatingLine />
-        <MenuItem>Languages</MenuItem> */}
+  <MenuItem>Languages</MenuItem> */}
       </NavItem>
     </NavigationBar>
-    <NavigationBarLine />
-    <Subtitle>Full Stack Developer</Subtitle>
+    {/* <NavigationBarLine /> */}
+    {/* <Subtitle>Full Stack Developer</Subtitle> */}
+    {/* <Subtitle>Angeliki Patrinou</Subtitle> */}
   </Background>
 )
 

@@ -1,7 +1,7 @@
 {
   "project": "connect4",
   "displayName": "Connect 4",
-  "description": "Minimalist Design & Transitions",
+  "description": "A new minimalist design & transitions for the classic Connect 4 game.",
   "tryMsg": "Play at",
   "codeMsg": "Check out the code",
   "createdWith": "Created with JavaScript & jQuery",

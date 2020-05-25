@@ -2,12 +2,21 @@ import styled from 'styled-components'
 import { H1, Regular } from '../Typography'
 
 export const ContactRegular = styled(Regular)`
-  color: white;
+  color: rgba(256, 256, 256, 0.9);
+  font-weight: 600;
+  font-size: 1.3em;
+  letter-spacing: 2.2px;
 `
-export const Title = styled(H1)``
+export const Title = styled(H1)`
+  @media (max-width: 1000px) {
+    font-size: 2em;
+  }
+`
 
 export const ContactBlock = styled.div`
+  min-height: 400px;
   margin-top: 50px;
+  position: relative;
   // background: #100d13;
   background-image: url(assets/background.jpg);
   background-position: bottom;
@@ -22,7 +31,7 @@ export const ContactBlock = styled.div`
 
 export const IconsContainer = styled.div`
   width: 100%;
-  margin: 50px;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,10 +67,23 @@ export const MenuIcon = styled.a`
   height: 60px;
   background-size: contain;
   background-repeat: no-repeat;
+  @media (max-width: 1000px) {
+    width: 30px;
+    height: 30px;
+  }
 `
 export const GithubIcon = styled(MenuIcon)`
   background-image: url('assets/github.png');
 `
 export const LinkedinIcon = styled(MenuIcon)`
   background-image: url('assets/linkedin.png');
+`
+export const Footer = styled.div`
+  color: rgba(256, 256, 256, 0.9);
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 1.2px;
+  @media (max-width: 1000px) {
+    font-size: 1em;
+  }
 `
