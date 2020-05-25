@@ -3,6 +3,7 @@ import { H1, Regular } from '../Typography'
 
 export const AboutMe = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   justify-content: space-evenly;
@@ -27,9 +28,6 @@ export const AboutMeBox = styled.div`
     margin: 0;
   }
 `
-export const Photo = styled.img`
-  width: 100%;
-`
 
 export const PhotoContainer = styled(AboutMeBox)`
   margin-right: 30px;
@@ -39,6 +37,28 @@ export const PhotoContainer = styled(AboutMeBox)`
     min-height: 500px;
     height: 100vh;
   }
+`
+export const PhotoContainer1 = styled.div`
+  // background: yellow;
+  display: flex;
+  justify-content: center;
+  height: 65vh;
+  max-height: 600px;
+  width: 80%;
+  max-width: 800px;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+`
+export const Photo = styled.div`
+  height: 55vh;
+  max-height: 600px;
+  width: 100%;
+  max-width: 800px;
+  background-image: url('assets/angeliki-mik-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 `
 export const Description = styled.div`
   width: 80%;

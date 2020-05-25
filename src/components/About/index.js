@@ -6,6 +6,7 @@ import {
   AboutMe,
   Photo,
   PhotoContainer,
+  PhotoContainer1,
   RegularWithMargin,
   Description,
 } from './elements'
@@ -17,13 +18,20 @@ const About = () => (
     <AboutMe>
       {/* <PhotoContainer>
         <Photo src="assets/angeliki-mik-1.png" />
-      </PhotoContainer> */}
+      </PhotoContainer>
+       */}
+      <PhotoContainer1>
+        <Photo
+        //  src="assets/angeliki-mik-1.png"
+        />
+      </PhotoContainer1>
+
       <Description>
         <RegularWithMargin>
           Full Stack JavaScript Developer based in Berlin with studies in
-          Applied Mathematics, Management and Full Stack Development. Her
+          Applied Mathematics, Management and Full Stack Development. My
           professional experience ranges from Online Marketing and Business
-          Consulting to Software Engineering. She enjoys creating Websites that
+          Consulting to Software Engineering. I enjoy creating Websites that
           work well and feel good by using the latest technologies.
         </RegularWithMargin>
         <br />

@@ -44,7 +44,7 @@ const Header = () => (
       </NavItem>
     </NavigationBar>
     {/* <NavigationBarLine /> */}
-    {/* <Subtitle>Full Stack Developer</Subtitle> */}
+    <Subtitle>Full Stack Developer</Subtitle>
     {/* <Subtitle>Angeliki Patrinou</Subtitle> */}
   </Background>
 )

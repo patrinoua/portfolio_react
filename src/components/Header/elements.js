@@ -9,7 +9,7 @@ export const Background = styled.div`
   display: flex;
   flex-direction: column;
   color: white;
-  background-image: url('assets/angeliki-mik-1.png');
+  background-image: url('assets/background.jpg');
   background-repeat: no-repeat;
   background-position: top;
   text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.8);
@@ -33,7 +33,7 @@ export const NavigationBar = styled.div`
   max-height: 130px;
   @media (max-width: 768px) {
     // padding: 0 5vw;
-    padding: 15px;
+    padding: 30px;
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@ export const Subtitle = styled.h2`
   display: flex;
   align-items: center;
   font-family: 'Quattrocento', 'Helvetica', serif;
-  margin-left: 60px;
+  margin-left: 45px;
   @media (max-width: 1000px) {
     font-size: 7em;
     line-height: 1.6;

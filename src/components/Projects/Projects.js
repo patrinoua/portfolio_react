@@ -31,7 +31,7 @@ const Projects = () => {
 
   return (
     <Suspense fallback={'Loading Projects...'}>
-      <Title>Projects</Title>
+      <Title>Selected Projects</Title>
       {listOfProjects.map(
         ({
           displayName,
