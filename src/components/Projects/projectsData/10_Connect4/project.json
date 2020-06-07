@@ -5,6 +5,7 @@
   "tryMsg": "Play at",
   "codeMsg": "Check out the code",
   "createdWith": "Created with JavaScript & jQuery",
+  "techUsed": "JavaScript & jQuery",
   "heroku_url": "https://connect4-spiced.herokuapp.com",
   "github_url": "https://github.com/patrinoua/connect4",
   "comment": "",

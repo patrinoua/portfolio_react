@@ -1,9 +1,10 @@
 {
   "project": "ioanna",
   "displayName": "Ioanna Kolokytha",
-  "description": "Design & Development",
+  "description": "Psychologist's Website. Web Design & Development",
   "tryMsg": "Book an appointment",
   "createdWith": "Created with React & hosted on Firebase",
+  "techUsed": "Built with React / hosted on Firebase",
   "heroku_url": "https://ioannakolokytha.com",
   "comment": "",
   "comment_link": "",
