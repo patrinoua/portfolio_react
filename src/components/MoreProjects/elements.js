@@ -14,26 +14,26 @@ export const ProjectsContainer = styled.div`
   // flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   flex-wrap: wrap;
 `
 export const ProjectContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: 20px;
+  position: relative;
 `
 
 export const ProjectImage = styled.div`
   height: 230px;
   width: 230px;
   background-image: ${(props) =>
-    `url(./assets/projects/${props.project}.${
+    `url(./assets/projects/${props.project}-mobile.${
       props.project === 'klazaridis' ? 'gif' : 'png'
     })`};
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  box-shadow: 1px 1px 1px 1px lightgrey;
+  // box-shadow: 1px 1px 1px 1px lightgrey;
 `
 
 export const MoreProjectsButton = styled.div`
@@ -68,7 +68,7 @@ export const ProjectOverlay = styled.div`
   width: 270px;
   height: 270px;
   position: absolute;
-  top: 0;
+  top: -20px;
   background: rgba(0, 0, 0, 0.8);
   color: white;
   box-sizing: border-box;

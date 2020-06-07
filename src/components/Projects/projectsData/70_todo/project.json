@@ -1,0 +1,12 @@
+{
+  "project": "todo",
+  "displayName": "To Do App",
+  "description": "Add things to this list, mark as done or erase",
+  "heroku_url": "https://react-to-do-9bcf2.firebaseapp.com/",
+  "github_url": "https://github.com/patrinoua/weve_todo_list",
+  "createdWith": "Built with React",
+  "techUsed": "Handlebars & Vue",
+  "comment_link": " ",
+  "comment_url": " ",
+  "codeIsAvailable": "1"
+}

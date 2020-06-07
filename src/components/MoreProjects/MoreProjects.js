@@ -24,7 +24,7 @@ import {
 var fs = require('fs')
 
 const MoreProjects = () => {
-  const projects = ['15_Ioanna', '30_Imageboard', '40_Spotify']
+  const projects = ['15_Ioanna', '30_Imageboard', '40_Spotify', '70_todo']
   const listOfProjects = []
   {
     projects.forEach((project) => {
