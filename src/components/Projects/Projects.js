@@ -51,7 +51,6 @@ const Projects = () => {
           codeIsAvailable,
         }) => (
           <ProjectContainer>
-            {console.log('codeIsAvailable', codeIsAvailable)}
             <ProjectImage
               href={heroku_url}
               target="_blank"
