@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useEffect } from 'react'
 import './App.css'
 import About from './components/About'
 import Projects from './components/Projects/Projects'
+import MoreProjects from './components/MoreProjects/MoreProjects'
 import Contact from './components/Contact'
 import { Element, animateScroll as scroll } from 'react-scroll'
 import { Regular } from './components/Typography'
@@ -54,6 +55,7 @@ function App() {
           </Element>
           <Element name="projects" className="element">
             <Projects />
+            <MoreProjects />
           </Element>
           <Element name="contact" className="element">
             <Contact />
