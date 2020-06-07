@@ -52,7 +52,7 @@ export const PhotoContainer1 = styled.div`
 `
 export const Photo = styled.div`
   height: 55vh;
-  max-height: 600px;
+  max-height: 500px;
   width: 100%;
   max-width: 800px;
   background-image: url('assets/angeliki-mik-1.png');

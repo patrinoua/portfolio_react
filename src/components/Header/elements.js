@@ -4,6 +4,7 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 export const Background = styled.div`
   position: relative;
   height: 60vh;
+  max-height: 500px;
   min-height: 400px;
   width: 100%;
   background-size: cover;
@@ -92,6 +93,7 @@ export const Subtitle = styled.h2`
   font-size: 4em;
   font-weight: 300;
   height: 40vh;
+  max-height: 330px;
   width: 300px;
   display: flex;
   align-items: center;

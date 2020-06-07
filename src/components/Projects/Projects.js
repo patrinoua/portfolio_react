@@ -9,16 +9,22 @@ import {
   ProjectImage,
   ProjectText,
   ProjectURL,
+  ProjectOverlay,
+  CheckoutCode,
+  VisitWebsite,
+  VisitWebsiteLink,
+  VisitCodeLink,
+  CodeIsPrivateMsg,
 } from './elements'
 
 var fs = require('fs')
 
 const Projects = () => {
   const projects = [
-    '60_klazaridis',
     '10_Connect4',
     // '15_Ioanna',
     '20_PinApp',
+    '60_klazaridis',
     // '30_Imageboard',
   ]
   const listOfProjects = []
@@ -42,13 +48,29 @@ const Projects = () => {
           heroku_url,
           github_url,
           project,
+          codeIsAvailable,
         }) => (
           <ProjectContainer>
+            {console.log('codeIsAvailable', codeIsAvailable)}
             <ProjectImage
               href={heroku_url}
               target="_blank"
               project={project}
             ></ProjectImage>
+            <ProjectOverlay>
+              <VisitWebsite>
+                <VisitWebsiteLink>Visit Project</VisitWebsiteLink>
+              </VisitWebsite>
+              <CheckoutCode>
+                {codeIsAvailable === '1' ? (
+                  <VisitCodeLink>See the Code</VisitCodeLink>
+                ) : (
+                  <CodeIsPrivateMsg>
+                    Code for this project is private
+                  </CodeIsPrivateMsg>
+                )}
+              </CheckoutCode>
+            </ProjectOverlay>
             <ProjectText>
               <H2>{displayName}</H2>
               <RegularCenter>{description}</RegularCenter>
