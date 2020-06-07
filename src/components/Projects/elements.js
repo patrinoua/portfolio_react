@@ -10,7 +10,7 @@ export const ProjectContainer = styled.div`
 export const ProjectImage = styled.a`
   height: 55vh;
   max-height: 600px;
-  width: 80%;
+  width: 100%;
   max-width: 800px;
   // border: 1px solid lightgrey;
   box-shadow: 1px 1px 1px 1px lightgrey;

@@ -17,6 +17,7 @@ const AppContainer = styled.div`
   }
 `
 const Container = styled.div`
+  width: 1200px;
   max-width: 1200px;
   box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
   background: white;

@@ -2,9 +2,10 @@ import styled from 'styled-components'
 import { Link, animateScroll as scroll } from 'react-scroll'
 
 export const Background = styled.div`
-  width: 100%;
+  position: relative;
+  height: 60vh;
   min-height: 400px;
-  height: 50vh;
+  width: 100%;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -22,13 +23,30 @@ export const Background = styled.div`
   }
 `
 
+export const TopShadow = styled.div`
+  background: linear-gradient(to bottom, black, transparent);
+  height: 15vh;
+  width: 100%;
+  max-height: 130px;
+  position: absolute;
+  z-index: 10;
+`
+export const ElementsContainer = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  box-sizing: border-box;
+  z-index: 20;
+  @media (min-width: 1000px) {
+    width: 96%;
+    padding: 10px;
+  }
+`
 export const NavigationBar = styled.div`
-  // background: black;
-  // height: 100px;
   display: flex;
   justify-content: space-between;
-  // margin: 0 60px;
-  background: linear-gradient(to bottom, black, transparent);
+  // background: linear-gradient(to bottom, black, transparent);
   height: 15vh;
   max-height: 130px;
   @media (max-width: 768px) {
