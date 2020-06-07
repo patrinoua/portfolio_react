@@ -51,18 +51,18 @@ const Projects = () => {
           codeIsAvailable,
         }) => (
           <ProjectContainer>
-            <ProjectImage
-              href={heroku_url}
-              target="_blank"
-              project={project}
-            ></ProjectImage>
+            <ProjectImage target="_blank" project={project}></ProjectImage>
             <ProjectOverlay>
               <VisitWebsite>
-                <VisitWebsiteLink>Visit Project</VisitWebsiteLink>
+                <VisitWebsiteLink href={heroku_url} target="_blank">
+                  Visit Project
+                </VisitWebsiteLink>
               </VisitWebsite>
               <CheckoutCode>
                 {codeIsAvailable === '1' ? (
-                  <VisitCodeLink>See the Code</VisitCodeLink>
+                  <VisitCodeLink href={github_url} target="_blank">
+                    See the Code
+                  </VisitCodeLink>
                 ) : (
                   <CodeIsPrivateMsg>
                     Code for this project is private
