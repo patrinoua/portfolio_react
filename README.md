@@ -1,6 +1,6 @@
 # Portfolio Website
 
-!()[https://github.com/patrinoua/portfolio_react/blob/master/Screenshot.png]
+![](https://github.com/patrinoua/portfolio_react/blob/master/Screenshot.png)
 
 #### Run a build and serve
 
