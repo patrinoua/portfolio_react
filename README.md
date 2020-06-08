@@ -1,3 +1,7 @@
+# Portfolio Website
+
+![](https://github.com/patrinoua/portfolio_react/blob/master/Screenshot.png)
+
 #### Run a build and serve
 
 `npm run build`
