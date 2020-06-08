@@ -10,8 +10,6 @@ import {
   LinkedinIcon,
   Footer,
 } from './elements'
-import { Regular } from '../Typography'
-import { findByLabelText } from '@testing-library/react'
 
 const Contact = () => (
   <ContactBlock>

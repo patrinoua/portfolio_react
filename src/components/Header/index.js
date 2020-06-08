@@ -10,7 +10,7 @@ import {
   LinkedinContainer,
   LinkedinIcon,
   // SeparatingLine,
-  NavigationBarLine,
+  // NavigationBarLine,
   Subtitle,
   ElementsContainer,
   TopShadow,

@@ -21,17 +21,15 @@ import {
   MoreProjectsButton,
 } from './elements'
 
-var fs = require('fs')
-
 const MoreProjects = () => {
   const projects = ['15_Ioanna', '30_Imageboard', '40_Spotify', '70_todo']
   const listOfProjects = []
-  {
-    projects.forEach((project) => {
-      const currentProject = require(`../Projects/projectsData/${project}/project.json`)
-      listOfProjects.push(currentProject)
-    })
-  }
+
+  projects.forEach((project) => {
+    const currentProject = require(`../Projects/projectsData/${project}/project.json`)
+    listOfProjects.push(currentProject)
+  })
+
   const [projectsAreVisible, showProjects] = useState(false)
   return (
     <Suspense fallback={'Loading Projects...'}>

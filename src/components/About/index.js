@@ -5,12 +5,15 @@ import React, {
 import {
   AboutMe,
   Photo,
-  PhotoContainer,
+  // PhotoContainer,
   PhotoContainer1,
   RegularWithMargin,
   Description,
 } from './elements'
-import { TitleHide, RegularHide } from '../Typography'
+import {
+  TitleHide,
+  // RegularHide
+} from '../Typography'
 
 const About = () => (
   <Suspense fallback={'Loading...'}>

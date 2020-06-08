@@ -25,12 +25,11 @@ const Projects = () => {
     // '30_Imageboard',
   ]
   const listOfProjects = []
-  {
-    projects.forEach((project) => {
-      const currentProject = require(`./projectsData/${project}/project.json`)
-      listOfProjects.push(currentProject)
-    })
-  }
+
+  projects.forEach((project) => {
+    const currentProject = require(`./projectsData/${project}/project.json`)
+    listOfProjects.push(currentProject)
+  })
 
   return (
     <Suspense fallback={'Loading Projects...'}>
