@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { H1, Regular } from '../Typography'
+import { Regular } from '../Typography'
 
 export const AboutMe = styled.div`
   display: flex;
