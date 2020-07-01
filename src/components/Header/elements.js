@@ -94,7 +94,7 @@ export const Subtitle = styled.h2`
   font-weight: 300;
   height: 40vh;
   max-height: 330px;
-  width: 300px;
+  width: 500px;
   display: flex;
   align-items: center;
   font-family: 'Quattrocento', 'Helvetica', serif;
