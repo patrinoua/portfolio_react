@@ -59,13 +59,13 @@ const MoreProjects = () => {
                     <ProjectTechnologies>{techUsed}</ProjectTechnologies>
                     <LinksContainer>
                       <VisitWebsite>
-                        <VisitWebsiteLink href={heroku_url} target="_blank">
+                        <VisitWebsiteLink href={heroku_url} target='_blank'>
                           Project
                         </VisitWebsiteLink>
                       </VisitWebsite>
                       <CheckoutCode>
                         {codeIsAvailable === '1' ? (
-                          <VisitCodeLink href={github_url} target="_blank">
+                          <VisitCodeLink href={github_url} target='_blank'>
                             Code
                           </VisitCodeLink>
                         ) : (
