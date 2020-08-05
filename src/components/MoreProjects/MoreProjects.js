@@ -22,7 +22,12 @@ import {
 } from './elements'
 
 const MoreProjects = () => {
-  const projects = ['15_Ioanna', '30_Imageboard', '40_Spotify', '70_todo']
+  const projects = [
+    // '15_Ioanna',
+    // '30_Imageboard',
+    '40_Spotify',
+    '70_todo',
+  ]
   const listOfProjects = []
 
   projects.forEach((project) => {

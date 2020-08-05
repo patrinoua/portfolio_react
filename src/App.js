@@ -46,17 +46,17 @@ function App() {
         <Container>
           <Header />
           <Element
-            name="about"
-            className="element"
+            name='about'
+            className='element'
             style={{ position: 'relative' }}
           >
             <About />
           </Element>
-          <Element name="projects" className="element">
+          <Element name='projects' className='element'>
             <Projects />
-            <MoreProjects />
+            {/* <MoreProjects /> */}
           </Element>
-          <Element name="contact" className="element">
+          <Element name='contact' className='element'>
             <Contact />
           </Element>
           {/* <p>Things to implement</p>
