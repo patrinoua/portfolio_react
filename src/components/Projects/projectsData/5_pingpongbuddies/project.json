@@ -1,0 +1,21 @@
+{
+  "project": "pingpongbuddies",
+  "displayName": "Ping Pong Buddies",
+  "description": "A mobile application that connects people who like to play ping pong!",
+  "tryMsg": "Play at",
+  "codeMsg": "Check out the code",
+  "createdWith": "Build with React Native, Expo & Firebase",
+  "techUsed": "React Native, Expo & Firebase",
+  "heroku_url": "https://pingpongbuddies.com",
+  "github_url": "",
+  "comment": "",
+  "comment_link": "",
+  "comment_url": "",
+  "codeIsAvailable": "0",
+  "displayNameGr": "Ping Pong Buddies",
+  "descriptionGr": "Παιξτε ping pong με τους γυρω σας!",
+  "tryMsgGr": "Παίξτε εδώ",
+  "codeMsgGr": "Δείτε τον κώδικα",
+  "createdWithGr": "Δημιουργήθηκε με χρήση React Native, Expo & Firebase",
+  "commentGr": ""
+}

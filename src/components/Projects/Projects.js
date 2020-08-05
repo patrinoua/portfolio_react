@@ -18,6 +18,7 @@ import {
 
 const Projects = () => {
   const projects = [
+    '5_pingpongbuddies',
     '10_Connect4',
     // '15_Ioanna',
     '20_PinApp',
@@ -45,22 +46,21 @@ const Projects = () => {
           codeIsAvailable,
         }) => (
           <ProjectContainer key={displayName}>
-            <ProjectImage target="_blank" project={project}></ProjectImage>
+            {console.log('project', project)}
+            <ProjectImage target='_blank' project={project}></ProjectImage>
             <ProjectOverlay>
               <VisitWebsite>
-                <VisitWebsiteLink href={heroku_url} target="_blank">
+                <VisitWebsiteLink href={heroku_url} target='_blank'>
                   Visit Project
                 </VisitWebsiteLink>
               </VisitWebsite>
               <CheckoutCode>
                 {codeIsAvailable === '1' ? (
-                  <VisitCodeLink href={github_url} target="_blank">
+                  <VisitCodeLink href={github_url} target='_blank'>
                     See the Code
                   </VisitCodeLink>
                 ) : (
-                  <CodeIsPrivateMsg>
-                    Code for this project is private
-                  </CodeIsPrivateMsg>
+                  <CodeIsPrivateMsg>This code is private</CodeIsPrivateMsg>
                 )}
               </CheckoutCode>
             </ProjectOverlay>
