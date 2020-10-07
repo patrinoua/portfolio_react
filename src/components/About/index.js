@@ -10,10 +10,7 @@ import {
   RegularWithMargin,
   Description,
 } from './elements'
-import {
-  TitleHide,
-  // RegularHide
-} from '../Typography'
+import { TitleHide, RegularHide } from '../Typography'
 
 const About = () => (
   <Suspense fallback={'Loading...'}>
@@ -39,7 +36,15 @@ const About = () => (
           technologies.
         </RegularWithMargin>
         <br />
-        {/* <RegularHide>My CV</RegularHide> */}
+        <RegularHide>
+          <a
+            href='https://www.dropbox.com/sh/3xwg2e6zvd1gwxv/AACbDtoaAVl6VvX4dqS_dL6Ca?dl=0'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            My CV
+          </a>
+        </RegularHide>
       </Description>
     </AboutMe>
   </Suspense>

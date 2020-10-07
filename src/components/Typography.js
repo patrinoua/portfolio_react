@@ -59,7 +59,10 @@ export const RegularCenter = styled(Regular)`
   text-align: center;
 `
 export const RegularHide = styled(Regular)`
-  @media (max-width: 1000px) {
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-end;
+  @media (max-width: 700px) {
     display: none;
   }
 `
