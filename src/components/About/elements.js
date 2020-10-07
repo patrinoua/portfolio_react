@@ -42,23 +42,24 @@ export const PhotoContainer1 = styled.div`
   // background: yellow;
   display: flex;
   justify-content: center;
-  height: 65vh;
-  max-height: 600px;
+  height: 80vh;
+  max-height: 700px;
   width: 80%;
   max-width: 800px;
+  margin-bottom: 40px;
   @media (max-width: 1000px) {
     width: 100%;
   }
 `
 export const Photo = styled.div`
-  height: 55vh;
-  max-height: 500px;
+  // height: 55vh;
+  // max-height: 500px;
   width: 100%;
   max-width: 800px;
-  background-image: url('assets/angeliki-mik-1.png');
+  background-image: url('assets/Angeliki.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center center;
 `
 export const Description = styled.div`
   width: 80%;

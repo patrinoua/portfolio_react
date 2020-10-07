@@ -21,9 +21,7 @@ const About = () => (
       </PhotoContainer>
        */}
       <PhotoContainer1>
-        <Photo
-        //  src="assets/angeliki-mik-1.png"
-        />
+        <Photo />
       </PhotoContainer1>
 
       <Description>
