@@ -9,8 +9,8 @@ export const ProjectContainer = styled.div`
   position: relative;
 `
 export const ProjectImage = styled.div`
-  height: 55vh;
-  max-height: 400px;
+  height: 65vh;
+  max-height: 600px;
   width: 100%;
   max-width: 800px;
   // border: 1px solid lightgrey;
