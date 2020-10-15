@@ -8,7 +8,7 @@ export const ProjectContainer = styled.div`
   align-items: center;
   position: relative;
 `
-export const ProjectImage = styled.div`
+export const ProjectImage = styled.a`
   height: 65vh;
   max-height: 600px;
   width: 100%;

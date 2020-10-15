@@ -3,7 +3,7 @@ import React, {
   Suspense,
 } from 'react'
 
-import { Title, H2, RegularCenter } from '../Typography'
+import { Title, H2, RegularWithMargin, RegularCenter } from '../Typography'
 import {
   ProjectContainer,
   ProjectImage,
@@ -47,7 +47,11 @@ const Projects = () => {
         }) => (
           <ProjectContainer key={displayName}>
             {console.log('project', project)}
-            <ProjectImage target='_blank' project={project}></ProjectImage>
+            <ProjectImage
+              href={heroku_url}
+              target='_blank'
+              project={project}
+            ></ProjectImage>
             <ProjectOverlay>
               <VisitWebsite>
                 <VisitWebsiteLink href={heroku_url} target='_blank'>
@@ -73,6 +77,44 @@ const Projects = () => {
           </ProjectContainer>
         )
       )}
+      <RegularWithMargin>
+        In my free time I like to play board games, cook, travel, take{' '}
+        <a
+          href='https://www.flickr.com/photos/11333811@N08/'
+          target='_blank'
+          style={{ textDecoration: 'underline' }}
+          rel='noopener noreferrer'
+        >
+          pictures,
+        </a>{' '}
+        listen to{' '}
+        <a
+          href='https://www.last.fm/user/MrsBlackGr'
+          target='_blank'
+          style={{ textDecoration: 'underline' }}
+          rel='noopener noreferrer'
+        >
+          music,
+        </a>{' '}
+        <a
+          href='https://www.dropbox.com/sh/dz7wb1inaitoryj/AABZF9fpEA7l85ZX4GlWTfOma?dl=0'
+          target='_blank'
+          style={{ textDecoration: 'underline' }}
+          rel='noopener noreferrer'
+        >
+          draw
+        </a>{' '}
+        and read{' '}
+        <a
+          href=' https://www.goodreads.com/user/show/41608895-angeliki'
+          target='_blank'
+          style={{ textDecoration: 'underline' }}
+          rel='noopener noreferrer'
+        >
+          books
+        </a>
+        !
+      </RegularWithMargin>
     </Suspense>
   )
 }

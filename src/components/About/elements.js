@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Regular } from '../Typography'
 
 export const AboutMe = styled.div`
   display: flex;
@@ -74,10 +73,5 @@ export const Description = styled.div`
   @media (max-width: 1000px) {
     width: 100%;
     min-width: auto;
-  }
-`
-export const RegularWithMargin = styled(Regular)`
-  @media (max-width: 1000px) {
-    padding: 0 30px;
   }
 `

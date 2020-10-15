@@ -48,6 +48,7 @@ export const Regular = styled.div`
   color: black;
   font-size: 1.2em;
   line-height: 1.6;
+  max-width: 800px;
   @media (max-width: 1000px) {
     font-size: 1.5em;
   }
@@ -67,5 +68,10 @@ export const RegularHide = styled(Regular)`
   justify-content: flex-end;
   @media (max-width: 700px) {
     display: none;
+  }
+`
+export const RegularWithMargin = styled(Regular)`
+  @media (max-width: 1000px) {
+    padding: 0 30px;
   }
 `
