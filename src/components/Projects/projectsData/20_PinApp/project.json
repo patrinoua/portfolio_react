@@ -14,5 +14,6 @@
   "tryMsgGr": "Βάλτε και εσείς pins!",
   "codeMsgGr": "Δείτε τον κώδικα",
   "createdWithGr": "Δημιουργήθηκε με χρήση Node.js, React, Redux and Socket.io",
-  "commentGr": "Αυτό το project έγινε σε συνεργασία με τον"
+  "commentGr": "Αυτό το project έγινε σε συνεργασία με τον",
+  "design_tool": "Photoshop"
 }
