@@ -13,7 +13,7 @@ import {
   // NavigationBarLine,
   Subtitle,
   ElementsContainer,
-  TopShadow,
+  TopShadow
 } from './elements'
 const Header = () => (
   <Background>
@@ -24,22 +24,45 @@ const Header = () => (
           <Name>Angeliki Patrinou</Name>
         </NavItem>
         <NavItem>
-          <MenuItem to='about' spy={true} smooth={true} duration={500}>
+          <MenuItem
+            to='about'
+            spy={true}
+            smooth={true}
+            duration={500}
+            className='no-underline'
+          >
             About
           </MenuItem>
-          <MenuItem to='projects' spy={true} smooth={true} duration={800}>
+          <MenuItem
+            to='projects'
+            spy={true}
+            smooth={true}
+            duration={800}
+            className='no-underline'
+          >
             Work
           </MenuItem>
-          <MenuItem to='contact' spy={true} smooth={true} duration={1000}>
+          <MenuItem
+            to='contact'
+            spy={true}
+            smooth={true}
+            duration={1000}
+            className='no-underline'
+          >
             Contact
           </MenuItem>
           <GithubContainer>
-            <GithubIcon href='https://github.com/patrinoua/' target='_blank' />
+            <GithubIcon
+              href='https://github.com/patrinoua/'
+              target='_blank'
+              className='no-underline'
+            />
           </GithubContainer>
           <LinkedinContainer>
             <LinkedinIcon
               href='https://www.linkedin.com/in/patrinoua/'
               target='_blank'
+              className='no-underline'
             />
           </LinkedinContainer>
           {/* <SeparatingLine />
