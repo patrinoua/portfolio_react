@@ -8,7 +8,7 @@ import {
   GithubIcon,
   LinkedinContainer,
   LinkedinIcon,
-  Footer,
+  Footer
 } from './elements'
 
 const Contact = () => (
@@ -19,7 +19,7 @@ const Contact = () => (
         backgroundImage: 'linear-gradient(to top,black,rgba(0,0,0,0.3))',
         width: '100%',
         height: '100%',
-        position: 'absolute',
+        position: 'absolute'
       }}
     ></div>
     <div
@@ -31,19 +31,24 @@ const Contact = () => (
         zIndex: 10,
         display: 'flex',
         alignItems: 'center',
-        flexDirection: 'column',
+        flexDirection: 'column'
       }}
     >
       <Title>Contact</Title>
       <ContactRegular>patrinoua@gmail.com</ContactRegular>
       <IconsContainer>
         <GithubContainer>
-          <GithubIcon href="https://github.com/patrinoua/" target="_blank" />
+          <GithubIcon
+            href='https://github.com/patrinoua/'
+            target='_blank'
+            className='no-underline'
+          />
         </GithubContainer>
         <LinkedinContainer>
           <LinkedinIcon
-            href="https://www.linkedin.com/in/patrinoua/"
-            target="_blank"
+            href='https://www.linkedin.com/in/patrinoua/'
+            target='_blank'
+            className='no-underline'
           />
         </LinkedinContainer>
       </IconsContainer>
@@ -52,7 +57,7 @@ const Contact = () => (
           position: 'absolute',
           bottom: '-6%',
           marginBottom: '45px',
-          color: 'white',
+          color: 'white'
         }}
       >
         <Footer>© 2020 Angeliki Patrinou</Footer>
