@@ -1,13 +1,13 @@
 import React, {
   // lazy,
-  Suspense,
+  Suspense
 } from 'react'
 import {
   AboutMe,
-  Photo,
+  // Photo,
   // PhotoContainer,
-  PhotoContainer1,
-  Description,
+  // PhotoContainer1,
+  Description
 } from './elements'
 import { TitleHide, RegularWithMargin, RegularHide } from '../Typography'
 
@@ -19,9 +19,9 @@ const About = () => (
         <Photo src="assets/angeliki-mik-1.png" />
       </PhotoContainer>
        */}
-      <PhotoContainer1>
+      {/* <PhotoContainer1>
         <Photo />
-      </PhotoContainer1>
+      </PhotoContainer1> */}
 
       <Description>
         <RegularWithMargin>
