@@ -12,7 +12,7 @@ const AppContainer = styled.div`
   padding: 20px 0;
   display: flex;
   justify-content: center;
-  @media (max-width: 1000px) {
+  @media (max-width: 1220px) {
     padding: 0;
   }
 `
