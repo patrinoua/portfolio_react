@@ -71,6 +71,7 @@ export const Description = styled.div`
   justify-content: center;
   text-align: justify;
   @media (max-width: 1000px) {
+    margin-top: 40px;
     width: 100%;
     min-width: auto;
   }

@@ -22,7 +22,7 @@ const About = () => (
       {/* <PhotoContainer1>
         <Photo />
       </PhotoContainer1> */}
-
+      
       <Description>
         <RegularWithMargin>
           Full Stack JavaScript Mobile and Web Application Developer based in

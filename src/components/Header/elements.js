@@ -103,7 +103,7 @@ export const Subtitle = styled.h2`
     font-size: 7em;
     line-height: 1.6;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 997px) {
     width: 90%;
     font-size: 3em;
     margin-left: 5vw;

@@ -1,0 +1,23 @@
+{
+  "project": "buddies",
+  "displayName": "Buddies",
+  "description": "Connecting people with common interests",
+  "tryMsg": "Play at",
+  "codeMsg": "Check out the code",
+  "createdWith": "Build with React Native, Expo & Firebase",
+  "techUsed": "React Native, Expo & Firebase",
+  "heroku_url": "https://buddies-app.com",
+  "github_url": "",
+  "comment": "",
+  "comment_link": "",
+  "comment_url": "",
+  "codeIsAvailable": "0",
+  "displayNameGr": "Buddies",
+  "descriptionGr": "",
+  "tryMsgGr": "Παίξτε εδώ",
+  "codeMsgGr": "Δείτε τον κώδικα",
+  "createdWithGr": "Δημιουργήθηκε με χρήση React Native, Expo & Firebase",
+  "design_url": "",
+  "design_tool": "Figma",
+  "commentGr": ""
+}

@@ -1,14 +1,14 @@
 * {
   margin: 0;
-  font-family: "Quicksand", "Arial Light", sans-serif;
+  font-family: 'Quicksand', 'Arial Light', sans-serif;
 }
 a {
   text-decoration: none;
-  border-bottom: 1px solid lightgray;
+  /* border-bottom: 1px solid lightgray; */
   color: black;
 }
-.no-underline{
-   border-bottom: none;
+.no-underline {
+  border-bottom: none;
 }
 a:hover {
   cursor: pointer;
