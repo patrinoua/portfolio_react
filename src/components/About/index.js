@@ -1,15 +1,15 @@
 import React, {
   // lazy,
-  Suspense
+  Suspense,
 } from 'react'
 import {
   AboutMe,
   // Photo,
   // PhotoContainer,
   // PhotoContainer1,
-  Description
+  Description,
 } from './elements'
-import { TitleHide, RegularWithMargin, RegularHide } from '../Typography'
+import { TitleHide, RegularWithMargin, RegularHide } from '../typography'
 
 const About = () => (
   <Suspense fallback={'Loading...'}>
@@ -22,7 +22,7 @@ const About = () => (
       {/* <PhotoContainer1>
         <Photo />
       </PhotoContainer1> */}
-      
+
       <Description>
         <RegularWithMargin>
           Full Stack JavaScript Mobile and Web Application Developer based in

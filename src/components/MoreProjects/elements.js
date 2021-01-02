@@ -8,10 +8,8 @@ export const MoreProjectsContainer = styled.div`
   align-items: center;
 `
 export const ProjectsContainer = styled.div`
-  width: 100%;
-  max-width: 900px;
+  width: 0%;
   display: flex;
-  // flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -24,51 +22,21 @@ export const ProjectContainer = styled.div`
 `
 
 export const ProjectImage = styled.div`
-  height: 230px;
-  width: 230px;
-  background-image: ${(props) =>
-    `url(./assets/projects/${props.project}-mobile.${
-      props.project === 'klazaridis' ? 'gif' : 'png'
-    })`};
+  height: 500px;
+  width: 500px;
+  background-image: ${(props) => `url(./assets/projects/${props.project}.png)`};
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  // box-shadow: 1px 1px 1px 1px lightgrey;
-`
-
-export const MoreProjectsButton = styled.div`
-  width: 300px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 50px 0;
-  font-family: 'Quicksand', 'Arial Light', sans-serif;
-  font-weight: 500;
-  font-size: 2.5em;
-  color: #2a2a2a;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.03);
-  padding: 10px;
-  border-radius: 30px;
-  &:hover {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.06);
-  }
-  @media (max-width: 768px) {
-    width: 200px;
-
-    font-size: 1.4em;
-    margin: 0;
+  @media (max-width: 550px) {
+    max-width: 90vw;
+    max-height: 90vw;
   }
 `
 
-export const ProjectOverlay = styled.div`
+export const ProjectOverlay = styled(ProjectImage)`
   opacity: 0;
-  width: 270px;
-  height: 270px;
   position: absolute;
-  top: -20px;
   background: rgba(0, 0, 0, 0.8);
   color: white;
   box-sizing: border-box;
@@ -77,11 +45,6 @@ export const ProjectOverlay = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  // justify-self: center;
-  // // display: flex;
-  // @media (max-width: 768px) {
-  //   display: none;
-  // }
   &:hover {
     opacity: 1;
   }

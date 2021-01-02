@@ -1,0 +1,12 @@
+{
+  "project": "mcMakler",
+  "displayName": "mcMakler",
+  "description": "Testing with Jest",
+  "heroku_url": "https://applications-website-ts.web.app/",
+  "github_url": "https://github.com/patrinoua/applications-website-TS",
+  "createdWith": "React, TypeScript, Material UI, StyledComponents, Storybook, LazyLoading, ESLint",
+  "techUsed": "has a searchbar, orizontal scrollbar",
+  "comment_link": " ",
+  "comment_url": " ",
+  "codeIsAvailable": "1"
+}

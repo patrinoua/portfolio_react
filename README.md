@@ -2,15 +2,29 @@
 
 ![](https://github.com/patrinoua/portfolio_react/blob/master/Screenshot.png)
 
+- Lazy loading (done)
+- Responsiveness(done) - To do: for big screens
+- connect Header navigation items to places in the screen (done)
+- Make a PWA out of it (half done)
+- Translation
+
+I am doing this in order to:
+
+- have google analytics
+- implement routing between different pages.
+- have different pages with services, showcase projects etc.
+
 #### Run a build and serve
 
 `npm run build`
 `firebase serve`
 
 #### deploy in firebase
+
 `firebase deploy`
 
 #### run locally
+
 `yarn start`
 
 #

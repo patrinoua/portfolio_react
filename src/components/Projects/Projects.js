@@ -1,9 +1,9 @@
 import React, {
   // lazy,
-  Suspense
+  Suspense,
 } from 'react'
 
-import { Title, H2, RegularWithMargin, RegularCenter } from '../Typography'
+import { Title, H2, RegularWithMargin, RegularCenter } from '../typography'
 import {
   ProjectContainer,
   ProjectImage,
@@ -13,7 +13,7 @@ import {
   VisitWebsite,
   VisitWebsiteLink,
   VisitCodeLink,
-  CodeIsPrivateMsg
+  CodeIsPrivateMsg,
 } from './elements'
 
 const Projects = () => {
@@ -23,7 +23,7 @@ const Projects = () => {
     '10_Connect4',
     // '15_Ioanna',
     '20_PinApp',
-    '60_klazaridis'
+    '60_klazaridis',
     // '30_Imageboard',
   ]
   const listOfProjects = []
@@ -46,7 +46,7 @@ const Projects = () => {
           design_url = '',
           design_tool = '',
           project,
-          codeIsAvailable
+          codeIsAvailable,
         }) => (
           <ProjectContainer key={displayName}>
             {console.log('project', project)}
@@ -57,7 +57,11 @@ const Projects = () => {
             ></ProjectImage>
             <ProjectOverlay>
               <VisitWebsite>
-                <VisitWebsiteLink href={heroku_url} target='_blank'>
+                <VisitWebsiteLink
+                  href={heroku_url}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   Visit Project
                 </VisitWebsiteLink>
               </VisitWebsite>
@@ -83,10 +87,11 @@ const Projects = () => {
                       <a
                         style={{
                           marginLeft: '5px',
-                          color: 'blue'
+                          color: 'blue',
                           // borderBottom: '1px solid lightgray !important'
                         }}
                         target='_blank'
+                        rel='noopener noreferrer'
                         href={design_url}
                       >
                         {' '}

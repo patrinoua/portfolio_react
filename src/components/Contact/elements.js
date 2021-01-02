@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { H1, Regular } from '../Typography'
+import { H1, Regular } from '../typography'
 
 export const ContactRegular = styled(Regular)`
   color: rgba(256, 256, 256, 0.9);
