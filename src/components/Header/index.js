@@ -13,7 +13,7 @@ import {
   // NavigationBarLine,
   Subtitle,
   ElementsContainer,
-  TopShadow
+  TopShadow,
 } from './elements'
 const Header = () => (
   <Background>
@@ -21,7 +21,7 @@ const Header = () => (
     <ElementsContainer>
       <NavigationBar>
         <NavItem>
-          <Name>Angeliki Patrinou</Name>
+          <Name>Angela Patrinou</Name>
         </NavItem>
         <NavItem>
           <MenuItem
