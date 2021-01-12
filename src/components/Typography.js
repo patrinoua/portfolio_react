@@ -16,6 +16,9 @@ export const Title = styled(H1)`
   margin: 100px 30px;
   @media (max-width: 700px) {
     text-align: center;
+    margin: 50px 0 20px 0;
+
+    font-size: 2em;
   }
 `
 export const TitleHide = styled(Title)`

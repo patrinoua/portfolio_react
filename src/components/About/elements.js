@@ -3,21 +3,14 @@ import styled from 'styled-components'
 export const AboutMe = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
-  min-width: 300px;
-  max-width: 800px;
+  width: 100%;
   height: 100%;
-  margin: 0 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
-  text-align: justify;
+  align-items: center;
   @media (max-width: 1000px) {
-    margin-top: 40px;
-    width: 100%;
-    min-width: auto;
+    flex-direction: column;
   }
+  position: relative;
 `
 export const AboutMeBox = styled.div`
   width: 50%;
@@ -25,7 +18,7 @@ export const AboutMeBox = styled.div`
   min-width: 300px;
   min-height: 300px;
   max-width: 700px;
-  max-height: 700px;
+  // max-height: 700px;
   margin: 0 60px;
   @media (max-width: 1000px) {
     flex-direction: column;
@@ -71,7 +64,7 @@ export const Description = styled.div`
   width: 80%;
   min-width: 300px;
   max-width: 800px;
-  max-height: 700px;
+  // max-height: 700px;
   margin: 0 60px;
   display: flex;
   flex-direction: column;

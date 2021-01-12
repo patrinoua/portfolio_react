@@ -145,6 +145,18 @@ const Projects = () => {
         </a>
         !
       </RegularWithMargin>
+      <br />
+      <br />
+      <RegularWithMargin>
+        Connect with me on{' '}
+        <a
+          href='https://www.linkedin.com/in/patrinoua/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          LinkedIn
+        </a>.
+      </RegularWithMargin>
     </Suspense>
   )
 }
