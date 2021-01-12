@@ -3,14 +3,21 @@ import styled from 'styled-components'
 export const AboutMe = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
+  min-width: 300px;
+  max-width: 800px;
   height: 100%;
-  justify-content: space-evenly;
+  margin: 0 60px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  text-align: justify;
   @media (max-width: 1000px) {
-    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+    min-width: auto;
   }
-  position: relative;
 `
 export const AboutMeBox = styled.div`
   width: 50%;

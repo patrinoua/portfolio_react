@@ -127,7 +127,7 @@ const Projects = () => {
         >
           music
         </a>
-        ,
+        ,{' '}
         <a
           href='https://www.dropbox.com/sh/dz7wb1inaitoryj/AABZF9fpEA7l85ZX4GlWTfOma?dl=0'
           target='_blank'
