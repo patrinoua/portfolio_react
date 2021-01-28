@@ -33,7 +33,7 @@ const About = () => (
           technologies.
         </RegularWithMargin>
         <br />
-        <RegularHide>
+        {/* <RegularHide>
           <a
             href='https://www.dropbox.com/sh/3xwg2e6zvd1gwxv/AACbDtoaAVl6VvX4dqS_dL6Ca?dl=0'
             target='_blank'
@@ -41,7 +41,7 @@ const About = () => (
           >
             My CV
           </a>
-        </RegularHide>
+        </RegularHide> */}
       </Description>
     </AboutMe>
   </Suspense>
