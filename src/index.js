@@ -7,6 +7,8 @@ var firebase = require('firebase/app')
 const firebaseConfig = require('./secrets.json').firebaseConfig
 
 firebase.initializeApp(firebaseConfig)
+const analytics = firebase.analytics()
+
 
 ReactDOM.render(<App />, document.getElementById('root'))
 
