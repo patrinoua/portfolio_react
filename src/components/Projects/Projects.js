@@ -49,7 +49,7 @@ const Projects = () => {
           codeIsAvailable,
         }) => (
           <ProjectContainer key={displayName}>
-            {console.log('project', project)}
+            {/* {console.log('project', project)} */}
             <ProjectImage
               href={heroku_url}
               target='_blank'
@@ -111,23 +111,27 @@ const Projects = () => {
         )
       )}
       <RegularWithMargin>
-        In my free time I like to play board games, cook, travel, take{' '}
+        In my free time I like to play board games, cook,{' '}
+        <a href='https://cmoreira.net/visited-countries-map/?vcstitle=&inacolor=%23e0e0e0&actcolor=%236699cc&vcscountries=TR,AT,BE,HR,CZ,EE,FR,DE,GR,HU,IT,LV,NL,NO,PT,RU,RS,SI,ES,GB,US'>
+          travel
+        </a>
+        ,{' '}
         <a
           href='https://www.flickr.com/photos/11333811@N08/'
           target='_blank'
           rel='noopener noreferrer'
         >
-          pictures
+          take pictures
         </a>
-        , listen to{' '}
+        ,{' '}
         <a
           href='https://www.last.fm/user/MrsBlackGr'
           target='_blank'
           rel='noopener noreferrer'
         >
-          music
+          listen to music
         </a>
-        ,
+        ,{' '}
         <a
           href='https://www.dropbox.com/sh/dz7wb1inaitoryj/AABZF9fpEA7l85ZX4GlWTfOma?dl=0'
           target='_blank'
@@ -135,13 +139,13 @@ const Projects = () => {
         >
           draw
         </a>{' '}
-        and read{' '}
+        and{' '}
         <a
           href=' https://www.goodreads.com/user/show/41608895-angeliki'
           target='_blank'
           rel='noopener noreferrer'
         >
-          books
+          read books
         </a>
         !
       </RegularWithMargin>
