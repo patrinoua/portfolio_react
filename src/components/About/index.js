@@ -25,12 +25,11 @@ const About = () => (
 
       <Description>
         <RegularWithMargin>
-          Full Stack JavaScript Mobile and Web Application Developer based in
-          Berlin. Studies in Applied Mathematics, Management and Full Stack
-          Development. My professional experience ranges from Online Marketing
-          and Business Consulting to Software Engineering. I enjoy creating
-          Websites that work well and feel good by using the latest
-          technologies.
+          Mobile and Web Application Developer based in Berlin. Studies in
+          Applied Mathematics, Management and Full Stack Development. My
+          professional experience ranges from Online Marketing and Business
+          Consulting to Software Engineering. I enjoy creating Websites that
+          work well and feel good by using the latest technologies.
         </RegularWithMargin>
         <br />
         {/* <RegularHide>
