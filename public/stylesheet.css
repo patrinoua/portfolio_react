@@ -6,6 +6,7 @@ a {
   text-decoration: none;
   /* border-bottom: 1px solid lightgray; */
   color: black;
+  color: blue;
 }
 .no-underline {
   border-bottom: none;

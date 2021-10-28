@@ -13,7 +13,7 @@ export const H1 = styled.h1`
   }
 `
 export const Title = styled(H1)`
-  margin: 100px 30px;
+  // margin: 100px 30px;
   @media (max-width: 700px) {
     text-align: center;
   }

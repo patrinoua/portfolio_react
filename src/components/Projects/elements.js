@@ -9,16 +9,17 @@ export const ProjectContainer = styled.div`
   position: relative;
 `
 export const ProjectImage = styled.a`
-  height: 65vh;
-  max-height: 600px;
+  // height: 65vh;
+  min-height: 300px;
+  // max-height: 600px;
   width: 100%;
   max-width: 800px;
   // border: 1px solid lightgrey;
-  box-shadow: 1px 1px 1px 1px lightgrey;
+  // box-shadow: 1px 1px 1px 1px lightgrey;
   background-repeat: no-repeat;
   // background-attachment: fixed;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   background-image: ${(props) =>
     `url(./assets/projects/${props.project}.${
       props.project === 'klazaridis' ? 'gif' : 'png'
@@ -26,6 +27,7 @@ export const ProjectImage = styled.a`
 
   @media (max-width: 1000px) {
     margin-bottom: 30px;
+    margin: 50px;
     height: 50vh;
     min-height: 280px;
     width: 100%;
@@ -95,10 +97,12 @@ export const ProjectText = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 180px;
+  // padding-bottom: 180px;
+  padding-bottom: 100px;
   @media (max-width: 1000px) {
     height: auto;
     padding-bottom: 130px;
+    padding-bottom: 30px;
   }
 `
 export const ProjectURL = styled.a`

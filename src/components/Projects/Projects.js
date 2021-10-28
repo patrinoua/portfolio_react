@@ -19,11 +19,11 @@ import {
 const Projects = () => {
   const projects = [
     '1_buddies',
-    '5_pingpongbuddies',
-    '10_Connect4',
+    // '5_pingpongbuddies',
+    // '10_Connect4',
     // '15_Ioanna',
-    '20_PinApp',
-    '60_klazaridis',
+    // '20_PinApp',
+    // '60_klazaridis',
     // '30_Imageboard',
   ]
   const listOfProjects = []
@@ -35,7 +35,7 @@ const Projects = () => {
 
   return (
     <Suspense fallback={'Loading Projects...'}>
-      <Title>Selected Projects</Title>
+      {/* <Title> Ongoing Project </Title> */}
       {listOfProjects.map(
         ({
           displayName,
@@ -50,12 +50,18 @@ const Projects = () => {
         }) => (
           <ProjectContainer key={displayName}>
             {/* {console.log('project', project)} */}
-            <ProjectImage
+            <VisitWebsiteLink
               href={heroku_url}
               target='_blank'
-              project={project}
-            ></ProjectImage>
-            <ProjectOverlay>
+              rel='noopener noreferrer'
+            >
+              <ProjectImage
+                href={heroku_url}
+                target='_blank'
+                project={project}
+              ></ProjectImage>
+            </VisitWebsiteLink>
+            {/* <ProjectOverlay>
               <VisitWebsite>
                 <VisitWebsiteLink
                   href={heroku_url}
@@ -74,11 +80,11 @@ const Projects = () => {
                   <CodeIsPrivateMsg>This code is private</CodeIsPrivateMsg>
                 )}
               </CheckoutCode>
-            </ProjectOverlay>
+            </ProjectOverlay> */}
             <ProjectText>
-              <H2>{displayName}</H2>
+              {/* <H2>{displayName}</H2> */}
               <RegularCenter>{description}</RegularCenter>
-              {design_tool && (
+              {/* {design_tool && (
                 <>
                   <br />
                   <RegularCenter>
@@ -103,9 +109,9 @@ const Projects = () => {
                     .
                   </RegularCenter>
                 </>
-              )}
-              <br />
-              <RegularCenter>{createdWith}.</RegularCenter>
+              )} */}
+              {/* <br /> */}
+              {/* <RegularCenter>{createdWith}.</RegularCenter> */}
             </ProjectText>
           </ProjectContainer>
         )
