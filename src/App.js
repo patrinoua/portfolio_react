@@ -7,6 +7,7 @@ import MoreProjects from './components/MoreProjects/MoreProjects'
 import ReactGa from 'react-ga'
 import styled from 'styled-components'
 import Home from './Home'
+
 const AppContainer = styled.div`
   background: whitesmoke;
   padding: 20px 0;
