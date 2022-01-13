@@ -2,15 +2,14 @@ import React from 'react'
 import { RegularWithMargin } from './typography'
 import styled from 'styled-components'
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
+export const Container = styled.div`
   height: 100%;
   width: 80%;
   min-width: 300px;
-  max-width: 800px;
-  max-height: 700px;
-  margin: 50px 60px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 70px 60px;
   margin-bottom: 0;
   align-items: center;
   text-align: justify;

@@ -1,11 +1,6 @@
+import React from 'react'
+import { H1 } from './typography'
 import styled from 'styled-components'
-import { H1, Regular } from '../typography'
-
-export const Title = styled(H1)`
-  @media (max-width: 1000px) {
-    font-size: 2em;
-  }
-`
 
 export const ContactBlock = styled.div`
   width: 100%;
@@ -25,6 +20,21 @@ export const Overlay = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
+`
+const Contents = styled.div`
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`
+export const Title = styled(H1)`
+  @media (max-width: 1000px) {
+    font-size: 2em;
+  }
 `
 export const IconsContainer = styled.div`
   width: 100%;
@@ -84,3 +94,40 @@ export const Footer = styled.div`
     font-size: 1em;
   }
 `
+const Block = styled.div`
+  height: 30%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+`
+export const Contact = () => (
+  <ContactBlock>
+    <Overlay />
+    <Contents>
+      <Block>
+        <Title>Get in touch</Title>
+      </Block>
+      <Block style={{ height: '20%' }}>
+        <IconsContainer>
+          <LinkedinContainer>
+            <LinkedinIcon
+              href='https://www.linkedin.com/in/patrinoua/'
+              target='_blank'
+              className='no-underline'
+            />
+          </LinkedinContainer>
+          <GithubContainer>
+            <GithubIcon
+              href='https://github.com/patrinoua/'
+              target='_blank'
+              className='no-underline'
+            />
+          </GithubContainer>
+        </IconsContainer>
+      </Block>
+      <Block style={{ height: '30%' }}>
+        <Footer>© {new Date().getFullYear()} Angela Patrinou</Footer>
+      </Block>
+    </Contents>
+  </ContactBlock>
+)
