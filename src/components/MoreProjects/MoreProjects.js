@@ -1,8 +1,4 @@
-import React, {
-  // lazy,
-  Suspense,
-} from 'react'
-
+import React from 'react'
 import {
   MoreProjectsContainer,
   ProjectsContainer,
@@ -37,65 +33,57 @@ const MoreProjects = () => {
   })
 
   return (
-    <Suspense fallback={'Loading Projects...'}>
-      <MoreProjectsContainer>
-        <H1>More Projects</H1>
-        <ProjectsContainer>
-          {listOfProjects.map(
-            ({
-              displayName,
-              description,
-              createdWith,
-              techUsed,
-              heroku_url,
-              github_url,
-              project,
-              codeIsAvailable,
-            }) => (
-              <ProjectContainer>
-                <ProjectImage project={project}></ProjectImage>
-                <ProjectOverlay>
-                  <h2>{displayName}</h2>
-                  <ProjectText>{description}</ProjectText>
-                  <ProjectTechnologies>{createdWith}</ProjectTechnologies>
-                  <ProjectTechnologies>{techUsed}</ProjectTechnologies>
-                  <LinksContainer>
-                    <VisitWebsite>
-                      <VisitWebsiteLink
-                        href={heroku_url}
+    <MoreProjectsContainer>
+      <H1>More Projects</H1>
+      <ProjectsContainer>
+        {listOfProjects.map(
+          ({
+            displayName,
+            description,
+            createdWith,
+            techUsed,
+            heroku_url,
+            github_url,
+            project,
+            codeIsAvailable,
+          }) => (
+            <ProjectContainer>
+              <ProjectImage project={project}></ProjectImage>
+              <ProjectOverlay>
+                <h2>{displayName}</h2>
+                <ProjectText>{description}</ProjectText>
+                <ProjectTechnologies>{createdWith}</ProjectTechnologies>
+                <ProjectTechnologies>{techUsed}</ProjectTechnologies>
+                <LinksContainer>
+                  <VisitWebsite>
+                    <VisitWebsiteLink
+                      href={heroku_url}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Project
+                    </VisitWebsiteLink>
+                  </VisitWebsite>
+                  <CheckoutCode>
+                    {codeIsAvailable === '1' ? (
+                      <VisitCodeLink
+                        href={github_url}
                         target='_blank'
                         rel='noopener noreferrer'
                       >
-                        Project
-                      </VisitWebsiteLink>
-                    </VisitWebsite>
-                    <CheckoutCode>
-                      {codeIsAvailable === '1' ? (
-                        <VisitCodeLink
-                          href={github_url}
-                          target='_blank'
-                          rel='noopener noreferrer'
-                        >
-                          Code
-                        </VisitCodeLink>
-                      ) : (
-                        <CodeIsPrivateMsg>Code is private</CodeIsPrivateMsg>
-                      )}
-                    </CheckoutCode>
-                  </LinksContainer>
-                </ProjectOverlay>
-                {/* <ProjectText>
-              <H2>{displayName}</H2>
-              <RegularCenter>{description}</RegularCenter>
-              <br />
-              <RegularCenter>{createdWith}</RegularCenter>
-            </ProjectText> */}
-              </ProjectContainer>
-            )
-          )}
-        </ProjectsContainer>
-      </MoreProjectsContainer>
-    </Suspense>
+                        Code
+                      </VisitCodeLink>
+                    ) : (
+                      <CodeIsPrivateMsg>Code is private</CodeIsPrivateMsg>
+                    )}
+                  </CheckoutCode>
+                </LinksContainer>
+              </ProjectOverlay>
+            </ProjectContainer>
+          )
+        )}
+      </ProjectsContainer>
+    </MoreProjectsContainer>
   )
 }
 

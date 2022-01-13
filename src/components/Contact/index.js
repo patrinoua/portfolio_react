@@ -2,7 +2,7 @@ import React from 'react'
 import {
   Title,
   ContactBlock,
-  ContactRegular,
+  Overlay,
   IconsContainer,
   GithubContainer,
   GithubIcon,
@@ -11,17 +11,9 @@ import {
   Footer,
 } from './elements'
 
-const Contact = () => (
+export const Contact = () => (
   <ContactBlock>
-    <div
-      style={{
-        minHeight: '400px',
-        backgroundImage: 'linear-gradient(to top,black,rgba(0,0,0,0.3))',
-        width: '100%',
-        height: '100%',
-        position: 'absolute',
-      }}
-    ></div>
+    <Overlay />
     <div
       style={{
         minHeight: '400px',
@@ -34,8 +26,7 @@ const Contact = () => (
         flexDirection: 'column',
       }}
     >
-      <Title>Get in touch with me</Title>
-      {/* <ContactRegular>patrinoua@gmail.com</ContactRegular> */}
+      <Title>Get in touch</Title>
       <IconsContainer>
         <LinkedinContainer>
           <LinkedinIcon
@@ -56,7 +47,7 @@ const Contact = () => (
         style={{
           position: 'absolute',
           bottom: '-6%',
-          marginBottom: '45px',
+          marginBottom: '70px',
           color: 'white',
         }}
       >
@@ -65,5 +56,3 @@ const Contact = () => (
     </div>
   </ContactBlock>
 )
-
-export default Contact

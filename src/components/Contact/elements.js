@@ -1,12 +1,6 @@
 import styled from 'styled-components'
 import { H1, Regular } from '../typography'
 
-export const ContactRegular = styled(Regular)`
-  color: rgba(256, 256, 256, 0.9);
-  font-weight: 600;
-  font-size: 1.3em;
-  letter-spacing: 2.2px;
-`
 export const Title = styled(H1)`
   @media (max-width: 1000px) {
     font-size: 2em;
@@ -14,21 +8,24 @@ export const Title = styled(H1)`
 `
 
 export const ContactBlock = styled.div`
+  width: 100%;
   min-height: 400px;
-  margin-top: 50px;
   position: relative;
-  // background: #100d13;
   background-image: url(assets/background.jpg);
   background-position: bottom;
-  width: 100%;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.8);
 `
-
+export const Overlay = styled.div`
+  min-height: 400px;
+  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.3));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+`
 export const IconsContainer = styled.div`
   width: 100%;
   margin: 20px;
