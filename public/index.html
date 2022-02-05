@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="192x192" href="assets/blackdot.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/blackdot.png"
-      sizes="16x16"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Full Stack JavaScript Developer based in Berlin. Has studied Applied Mathematics and Management, Professional Experience ranges from Online Marketing and Business Consulting to Software Engineering. Likes creating Websites that work well and feel good by using the latest technologies."
-    />
-    <meta
-      name="keywords"
-      content="Angela Patrinou App Developer Berlin, Angela Patrinou Web Developer Berlin, Angeliki Patrinou Berlin, Angeliki Patrinou, Angela Patrinou,angeliki patrinou, Berlin, web developer, full stack developer, web developer, 
-      mobile application developer, app developer, react developer, react engineer, react native, react native developer, react native engineer, firebase developer, buddies-app.com, buddies,
+	<head>
+		<meta charset="utf-8" />
+		<link rel="apple-touch-icon" sizes="192x192" href="assets/blackdot.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			href="assets/blackdot.png"
+			sizes="16x16"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta
+			name="description"
+			content="Full Stack JavaScript Developer based in Berlin. Has studied Applied Mathematics and Management, Professional Experience ranges from Online Marketing and Business Consulting to Software Engineering. Likes creating Websites that work well and feel good by using the latest technologies."
+		/>
+		<meta
+			name="keywords"
+			content="Angela Patrinou App Developer Berlin, Angela Patrinou Web Developer Berlin, 
+      Angeliki Patrinou Berlin, Angela Patrinou Berlin, Angeliki Patrinou, Angela Patrinou,angeliki patrinou, 
+      Berlin, web developer, full stack developer, web developer, hire developer, hire app developer, how to hire an app developer,
+      mobile application developer, app developer, react developer, react engineer, react native, 
+      react native developer, react native engineer, firebase developer, programmatistis,
       app developer berlin, application developer berlin, react native developer berlin, 
-      programmatistis,
-    website for professional, portfolio website, ιστοσελίδα για επαγγελματία,
-    istoselida, kataskeui istoselidas, προγραμματιστής, ιστοσελίδα, κατασκευή ιστοσελίδας,
-    δημιουργία ιστοσελίδας, δημιουργία e-shop"
-    />
-    <meta property="og:image" content="assets/angeliki-mik.png" />
-    <meta
-      property="og:description"
-      content="Angeliki Patrinou | Full Stack Developer"
-    />
-    <meta property="og:url" content="http://angelikipatrinou.com" />
-    <meta property="og:title" content="Angeliki Patrinou" />
-    <link rel="manifest" href="./manifest.json" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Quicksand"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Quattrocento"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="stylesheet.css" />
+      buddies-app.com, buddies,
+      Buddies app, Buddies, Buddies start up, Buddies start up Berlin, Buddies Berlin,
+      tipsforjobs, tips for jobs, get a job in tech, tech tips,
+      Αγγελική, Αγγελική Πατρινού, Πατρινού, 
+      website for professional, portfolio website, ιστοσελίδα για επαγγελματία,
+      istoselida, kataskeui istoselidas, προγραμματιστής, ιστοσελίδα, κατασκευή ιστοσελίδας,
+      δημιουργία ιστοσελίδας, δημιουργία e-shop"
+		/>
+		<meta property="og:image" content="assets/Angeliki.png" />
+		<meta
+			property="og:description"
+			content="Angela Patrinou | Full Stack Developer"
+		/>
+		<meta property="og:url" content="http://angelapatrinou.com" />
+		<meta property="og:title" content="Angela Patrinou" />
+		<link rel="manifest" href="./manifest.json" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Quicksand"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Quattrocento"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="stylesheet.css" />
 
-    <title>Angela Patrinou, App Developer</title>
-  </head>
-  <body>
-    <noscript>Please enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+		<title>Angela Patrinou, App Developer</title>
+	</head>
+	<body>
+		<noscript>Please enable JavaScript to run this app.</noscript>
+		<div id="root"></div>
+		<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
+		<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
 
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: 'AIzaSyCS5H4NKz6NKN5pn4S0k6iXfRUy0rJ1vYo',
-        authDomain: 'angeliki.firebaseapp.com',
-        databaseURL: 'https://angeliki.firebaseio.com',
-        projectId: 'angeliki',
-        storageBucket: 'angeliki.appspot.com',
-        messagingSenderId: '108566255900',
-        appId: '1:108566255900:web:b57f71b83e444f09',
-        measurementId: 'G-15MV4GP3JV',
-      }
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig)
-      firebase.analytics()
-    </script>
-  </body>
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: 'AIzaSyCS5H4NKz6NKN5pn4S0k6iXfRUy0rJ1vYo',
+				authDomain: 'angeliki.firebaseapp.com',
+				databaseURL: 'https://angeliki.firebaseio.com',
+				projectId: 'angeliki',
+				storageBucket: 'angeliki.appspot.com',
+				messagingSenderId: '108566255900',
+				appId: '1:108566255900:web:b57f71b83e444f09',
+				measurementId: 'G-15MV4GP3JV',
+			}
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig)
+			firebase.analytics()
+		</script>
+	</body>
 </html>
