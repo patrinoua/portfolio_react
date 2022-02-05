@@ -1,29 +1,14 @@
 import React from 'react'
 import { RegularWithMargin } from './typographySmallLetter'
 import styled from 'styled-components'
+import { Link, Container } from './About'
 
-const Link = styled.a`
-	color: #bf6d04;
-`
-export const Container = styled.div`
-	height: 100%;
-	width: 80%;
-	min-width: 300px;
-	max-width: 600px;
-	display: flex;
-	flex-direction: column;
+export const StyledContainer = styled(Container)`
 	margin: 0px 60px 60px 60px;
-	align-items: center;
-	text-align: justify;
-	@media (max-width: 1000px) {
-		flex-direction: column;
-		width: 100%;
-		min-width: auto;
-	}
-	position: relative;
 `
+
 export const Freetime = () => (
-	<Container>
+	<StyledContainer>
 		<RegularWithMargin>
 			In my free time, I enjoy to{' '}
 			<Link href='https://cmoreira.net/visited-countries-map/?vcstitle=&inacolor=%23e0e0e0&actcolor=%236699cc&vcscountries=TR,AT,BE,HR,CZ,EE,FR,DE,GR,HU,IT,LV,NL,NO,PT,RU,RS,SI,ES,GB,US'>
@@ -69,5 +54,5 @@ export const Freetime = () => (
 				tech tips.
 			</Link>
 		</RegularWithMargin>
-	</Container>
+	</StyledContainer>
 )

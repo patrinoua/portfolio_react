@@ -11,7 +11,6 @@ export const Container = styled.div`
 	flex-direction: column;
 	margin: 70px 60px;
 	margin-bottom: 0;
-	align-items: center;
 	text-align: justify;
 
 	@media (max-width: 1000px) {
@@ -19,12 +18,15 @@ export const Container = styled.div`
 		width: 100%;
 		min-width: auto;
 	}
+
 	@media (max-width: 500px) {
 		margin-top: 40px;
 	}
-	position: relative;
 `
 
+export const Link = styled.a`
+	color: #bf6d04;
+`
 export const About = () => (
 	<Container>
 		<RegularWithMargin>
@@ -33,6 +35,12 @@ export const About = () => (
 			professional experience ranges from Online Marketing and Business
 			Consulting to Software Engineering. I enjoy creating Websites that work
 			well and feel good by using the latest technologies.
+		</RegularWithMargin>
+		<br />
+		<RegularWithMargin>
+			Currently working at <Link href='https://artsy.net/'>Artsy</Link>, while
+			building <Link href='https://buddies-app.com/'>Buddies</Link>, the expat
+			app, on the side.
 		</RegularWithMargin>
 	</Container>
 )
