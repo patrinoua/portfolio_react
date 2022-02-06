@@ -1,12 +1,13 @@
 import React from 'react'
-import { RegularWithMargin } from './typographySmallLetter'
 import styled from 'styled-components'
+import { RegularWithMargin } from './typographySmallLetter'
 import { Link, Container } from './About'
 
 export const StyledContainer = styled(Container)`
 	margin: 0px 60px 60px 60px;
 	@media (max-width: 500px) {
 		margin-top: 0;
+		margin-bottom: 40px;
 	}
 `
 

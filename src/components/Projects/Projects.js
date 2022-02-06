@@ -1,17 +1,25 @@
 import React from 'react'
-import { RegularCenter } from '../typographySmallLetter'
-import {
-	ProjectContainer,
-	ProjectImage,
-	ProjectText,
-	ProjectOverlay,
-	CheckoutCode,
-	VisitWebsite,
-	VisitWebsiteLink,
-	VisitCodeLink,
-	CodeIsPrivateMsg,
-} from './elements'
+import styled from 'styled-components'
 
+import { ProjectImage } from './elements'
+
+export const ProjectContainer = styled.div`
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0;
+	position: relative;
+	@media (max-width: 500px) {
+		width: 100%; // xreiazetai!
+		margin: 0px;
+	}
+`
+
+export const VisitWebsiteLink = styled.a`
+	width: 100%; // xreiazetai, otherwise pic dissapears
+`
 export const Projects = () => {
 	const projects = [
 		'1_buddies',
@@ -31,93 +39,19 @@ export const Projects = () => {
 
 	return (
 		<>
-			{listOfProjects.map(
-				({
-					displayName,
-					description,
-					createdWith,
-					heroku_url,
-					github_url,
-					design_url = '',
-					design_tool = '',
-					project,
-					codeIsAvailable,
-				}) => (
-					<ProjectContainer key={displayName}>
-						<VisitWebsiteLink
-							href={heroku_url}
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<ProjectImage project={project}></ProjectImage>
-						</VisitWebsiteLink>
-						{/* <ProjectOverlayComponent /> */}
-						{/* <ProjectTextComponent description={description} /> */}
-					</ProjectContainer>
-				)
-			)}
+			{listOfProjects.map(({ displayName, heroku_url, project }) => (
+				<ProjectContainer key={displayName}>
+					<VisitWebsiteLink
+						href={heroku_url}
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<ProjectImage project={project}></ProjectImage>
+					</VisitWebsiteLink>
+					{/* <ProjectOverlayComponent /> */}
+					{/* <ProjectTextComponent description={description} /> */}
+				</ProjectContainer>
+			))}
 		</>
 	)
 }
-
-const ProjectOverlayComponent = ({
-	heroku_url,
-	codeIsAvailable,
-	github_url,
-}) => (
-	<ProjectOverlay>
-		<VisitWebsite>
-			<VisitWebsiteLink
-				href={heroku_url}
-				target='_blank'
-				rel='noopener noreferrer'
-			>
-				Visit Project
-			</VisitWebsiteLink>
-		</VisitWebsite>
-		<CheckoutCode>
-			{codeIsAvailable === '1' ? (
-				<VisitCodeLink href={github_url} target='_blank'>
-					See the Code
-				</VisitCodeLink>
-			) : (
-				<CodeIsPrivateMsg>This code is private</CodeIsPrivateMsg>
-			)}
-		</CheckoutCode>
-	</ProjectOverlay>
-)
-
-const ProjectTextComponent = ({ displayName, description = '' }) => (
-	<ProjectText>
-		{/* <H2>{displayName}</H2> */}
-		<RegularCenter>{description}</RegularCenter>
-		{/* {design_tool && (
-		<>
-			<br />
-			<RegularCenter>
-				Designed with <t />
-				{design_url ? (
-					<a
-						style={{
-							marginLeft: '5px',
-							color: 'blue',
-							// borderBottom: '1px solid lightgray !important'
-						}}
-						target='_blank'
-						rel='noopener noreferrer'
-						href={design_url}
-					>
-						{' '}
-						{design_tool}
-					</a>
-				) : (
-					<p style={{ marginLeft: '5px' }}>{design_tool}</p>
-				)}
-				.
-			</RegularCenter>
-		</>
-	)} */}
-		{/* <br /> */}
-		{/* <RegularCenter>{createdWith}.</RegularCenter> */}
-	</ProjectText>
-)

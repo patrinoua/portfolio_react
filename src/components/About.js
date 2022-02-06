@@ -30,8 +30,8 @@ export const Link = styled.a`
 export const About = () => (
 	<Container>
 		<RegularWithMargin>
-			Grew up in Greece, based in Berlin. Part-time digital nomad. Studies in
-			Applied Mathematics, Management and Full Stack Development. My
+			Grew up in Greece, based in Berlin since 2016. Part-time digital nomad.
+			Studies in Applied Mathematics, Management and Full Stack Development. My
 			professional experience ranges from Online Marketing and Business
 			Consulting to Software Engineering. I enjoy creating Websites that work
 			well and feel good by using the latest technologies.

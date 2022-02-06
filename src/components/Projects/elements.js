@@ -1,18 +1,7 @@
+import React from 'react'
 import styled from 'styled-components'
+import { RegularCenter } from '../typographySmallLetter'
 
-export const ProjectContainer = styled.div`
-	max-width: 600px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 30px 0;
-	position: relative;
-	@media (max-width: 500px) {
-		width: 100%; // xreiazetai
-		margin: 20px;
-	}
-`
 export const ProjectImage = styled.div`
 	width: 600px;
 	height: 360px;
@@ -38,10 +27,8 @@ export const ProjectImage = styled.div`
 	}
 	@media (max-width: 500px) {
 		border-radius: 0;
-		margin: 0%;
+		margin: 0;
 		width: 100%;
-		/* height: auto; */
-		/* min-height: 200px; */
 	}
 `
 
@@ -62,10 +49,15 @@ export const VisitWebsite = styled.div`
 `
 
 export const VisitWebsiteLink = styled.a`
-	width: 100%;
-	/* height: 100%; */
+	width: 100%; // xreiazetai, otherwise pic dissapears
 `
-export const VisitCodeLink = styled(VisitWebsiteLink)`
+export const VisitCodeLink = styled.a`
+	width: 100%;
+	color: black;
+`
+
+export const CheckoutCode = styled(VisitCodeLink)`
+	background: rgba(256, 256, 256, 0.7);
 	color: black;
 `
 export const CodeIsPrivateMsg = styled.div`
@@ -73,11 +65,6 @@ export const CodeIsPrivateMsg = styled.div`
 	font-weight: 600;
 	color: #636363;
 	text-align: center;
-`
-
-export const CheckoutCode = styled(VisitWebsite)`
-	background: rgba(256, 256, 256, 0.7);
-	color: black;
 `
 
 export const ProjectText = styled.div`
@@ -117,3 +104,65 @@ export const ProjectOverlay = styled(ProjectImage)`
 		display: none;
 	}
 `
+
+export const ProjectOverlayComponent = ({
+	heroku_url,
+	codeIsAvailable,
+	github_url,
+}) => (
+	<ProjectOverlay>
+		<VisitWebsite>
+			<VisitWebsiteLink
+				href={heroku_url}
+				target='_blank'
+				rel='noopener noreferrer'
+			>
+				Visit Project
+			</VisitWebsiteLink>
+		</VisitWebsite>
+		<CheckoutCode>
+			{codeIsAvailable === '1' ? (
+				<VisitCodeLink href={github_url} target='_blank'>
+					See the Code
+				</VisitCodeLink>
+			) : (
+				<CodeIsPrivateMsg>This code is private</CodeIsPrivateMsg>
+			)}
+		</CheckoutCode>
+	</ProjectOverlay>
+)
+
+export const ProjectTextComponent = ({ displayName, description = '' }) => (
+	<ProjectText>
+		{/* <H2>{displayName}</H2> */}
+		<RegularCenter>{description}</RegularCenter>
+		{/* {design_tool && (
+		<>
+			<br />
+			<RegularCenter>
+				Designed with <t />
+				{design_url ? (
+					<a
+						style={{
+							marginLeft: '5px',
+							color: 'blue',
+							// borderBottom: '1px solid lightgray !important'
+						}}
+						target='_blank'
+						rel='noopener noreferrer'
+						href={design_url}
+					>
+						{' '}
+						{design_tool}
+					</a>
+				) : (
+					<p style={{ marginLeft: '5px' }}>{design_tool}</p>
+				)}
+				.
+			</RegularCenter>
+		</>
+	)} */}
+		{/* <br /> */}
+		{/* <RegularCenter>{createdWith}.</RegularCenter> */}
+	</ProjectText>
+)
