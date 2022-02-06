@@ -38,9 +38,19 @@ export const About = () => (
 		</RegularWithMargin>
 		<br />
 		<RegularWithMargin>
-			Currently working at <Link href='https://artsy.net/'>Artsy</Link>, while
-			building <Link href='https://buddies-app.com/'>Buddies</Link>, the expat
-			app, on the side.
+			Currently working at{' '}
+			<Link href='https://artsy.net/' target='_blank' rel='noopener noreferrer'>
+				Artsy
+			</Link>
+			, while building{' '}
+			<Link
+				href='https://buddies-app.com/'
+				target='_blank'
+				rel='noopener noreferrer'
+			>
+				Buddies
+			</Link>
+			, the expat app, on the side.
 		</RegularWithMargin>
 	</Container>
 )
