@@ -83,7 +83,7 @@ export const GithubIcon = styled(MenuIcon)`
 	background-image: url('assets/github.png');
 `
 export const LinkedinIcon = styled(MenuIcon)`
-	background-image: url('assets/linkedin.png');
+	background-image: url('assets/linked-in.png');
 `
 export const Footer = styled.div`
 	color: rgba(256, 256, 256, 0.9);
@@ -104,9 +104,7 @@ export const Contact = () => (
 	<ContactBlock>
 		<Overlay />
 		<Contents>
-			<Block>
-        {/* <Title>Get in touch</Title> */}
-      </Block>
+			<Block>{/* <Title>Get in touch</Title> */}</Block>
 			<Block style={{ height: '20%' }}>
 				<IconsContainer>
 					<LinkedinContainer>
