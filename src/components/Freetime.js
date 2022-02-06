@@ -52,7 +52,7 @@ export const Freetime = () => (
 			</Link>{' '}
 			and share{' '}
 			<Link
-				href='https://work-in-tech.web.app'
+				href='https://work-in-tech.org'
 				target='_blank'
 				rel='noopener noreferrer'
 			>
