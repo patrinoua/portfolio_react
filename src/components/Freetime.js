@@ -37,7 +37,8 @@ export const Freetime = () => (
 				rel='noopener noreferrer'
 			>
 				draw
-			</Link>{' '}
+			</Link>
+			,{' '}
 			<Link
 				href=' https://www.goodreads.com/user/show/41608895-angeliki'
 				target='_blank'
