@@ -56,8 +56,9 @@ export const Freetime = () => (
 				target='_blank'
 				rel='noopener noreferrer'
 			>
-				tech tips.
+				tech tips
 			</Link>
+			.
 		</RegularWithMargin>
 	</StyledContainer>
 )
